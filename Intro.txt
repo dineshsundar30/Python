@@ -1,0 +1,5 @@
+Introduction
+
+This repository contains my personal Python notes. It serves as a reference for various Python concepts, best practices, and code snippets. Whether you’re a beginner or an experienced developer, feel free to explore and contribute!
+
+Remember to customize the title and description to match your project. Happy coding! 😊
