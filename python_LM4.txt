@@ -1,0 +1,81 @@
+'''import random
+lucky_num=random.randint(1,100)
+fortune_num=random.randint(1,3)
+fortune_text=''  # empty str
+if fortune_num==1:
+  fortune_text='you will have a great day!'
+if fortune_num==2:
+  fortune_text='today will be tough..... but worth it'
+if fortune_num==3:
+  fortune_text='your going to get married this yr!'
+
+print(f"{fortune_text} your lucky number is:{lucky_num}")'''
+import itertools
+x = int(input("enter x:"))
+y = int(input("enter y:"))
+z = int(input("enter z:"))
+n = int(input("enter n:"))
+
+total=[x, y, z ]
+newlist =''
+tot=sum(total)
+if tot != n:
+    for i in range (0, n):
+        newlist = newlist + str(i)
+    length= len(newlist) 
+        
+
+    for j in newlist:
+         if j==',':
+           continue
+    newlist=newlist+j
+    print(newlist)
+    combinations =list(itertools.combinations(newlist, n))
+    print(combinations)
+    
+----------------------------------------------------------------------------------------------------------------------------------
+'''
+#sorting without the in built sort method
+
+a=[9,7,6,5,4,32,2]
+newa=[]
+while a:
+    minimum=min(a)
+    newa.append(minimum)
+    a.remove(minimum)
+print(newa)
+
+#sum of 2d list
+
+mylist=[[24,4,57,8,2,1],[32,4,68,4],[6,8,9,3,4,6,4,2,5,6,34]]
+total=0
+for i in mylist:
+    twolist=0
+    for j in i:
+       twolist=twolist+j
+    
+    total=total+twolist
+
+print(total)
+
+#factorial in Recursion( call in the function inside the same functin)
+
+def fact(num):
+
+    if num==0:                # this part is importent for the Recursion
+                                           orelse it's through the RecursionError
+        return 1
+    return num*(fact(num-1))
+
+
+print(fact(3)) 
+
+#file handling
+
+with open("sample.txt", 'a') as f:
+    f.write("\nim from dharmapuri")
+
+'''
+
+
+    

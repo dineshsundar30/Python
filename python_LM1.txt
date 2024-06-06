@@ -1,0 +1,347 @@
+#-----strings-----------------------------
+
+store='nick\'s pizza, the "best" there is'  
+o/p  nick's pizza, the "best" there is     ------>  #\'is use to denoted that this not a end of the string
+\t- tabspace
+\n - nextline
+
+#-------format----------
+
+height = float(input("whats your height: "))
+height_inches = "{:.2f}".formate(height/2.54)  ---<syntax  #it will print the last 2 decimal point in the float
+
+#-------functions and method------
+
+#used to perform a specified task
+message= "hi"
+name=" welcome dk"
+print(name.upper()) ---#here .upper is method basically invoking a mathod
+print(name.lower())
+print(name.find("dk"))
+print(len(name))
+print(name.count("d"))
+print(name.replace("d", "a")
+print(name.isalpha())
+print(name.isdigit())
+
+function - we can call directly 
+methon we need to invoking method using . opperater
+
+#---------math functions---------------
+a=5.5
+print(round(a))--o/t 6
+a=-5
+print(abs(a))--o/t 5 absolut value, if its a=5 means it return 5 only 
+
+print(pow(a, 3))
+or
+a**3
+
+print(math.factorial(12))
+
+a=3
+b=4
+print(max(a,b))
+print(minn(a,b))
+
+import math
+a=1
+print(math.ceil(a)) --it's round the a with the next num
+print(math.floor(a))  -- it's round thr a with the previous number
+
+
+
+
+#--------using variables in strings-------
+
+example prg;
+day=30
+month='september'
+temp=-17
+print(f"Today is {month} {day} and it's {temp} degrees outside")
+o/p today is 30 september and it's -17 degrees outside  ----> f is use to insert a variable in side the string 
+
+
+
+
+#-----------booleans-----------------------
+
+light_is_on=true
+if light_is_on:
+   print("the light is on")
+   print("hello")
+o/p- the lights is on 
+supose light_is_on=false means it not print anyting
+
+
+
+#-----------if comparison----------------- 
+age=25
+if age>=25:
+    print("u r adlt")
+else:
+    print("u r child")
+
+
+
+#-----------------to find odd or even number---------
+
+num = input("enter a num between 1 to 100 : ")
+
+if num>=1 and num<=100:
+  if num%2==0:
+     print("yes your num is even num")
+  else:
+     print("your num is odd num")
+else:
+  print("your number is not in range")
+
+
+
+#----------------picking random------------------------
+ex prg:
+import random
+print(ramdom.randint(1,10))
+#              ^ its use to get random integer and (1,10) -->this is use to set the range 
+#print(random.random())
+#               ^ this for the float 
+
+answer=random.randint(1,3)
+if answer==1:
+   print("yes")
+if answer==2:
+   print("no")
+if answer==3:
+   print("maybe")
+
+
+
+
+#------------2 project----------------
+ex prg:
+
+import random
+lucky_num=random.randint(1,100)
+fortune_num=random.randint(1,3)
+fortune_text=''  # empty str
+if fortune_num==1:
+  fortune_text='you will have a great day!'
+if fortune_num==2:
+  fortune_text='today will be tough..... but worth it'
+if fortune_num==3:
+  fortune_text='your going to get married this yr!'
+
+print(f"{fortune_text} your lucky number is:{lucky_num}")
+
+
+
+
+---------------------------list------------------------------
+###to print the fav num
+
+fav_num=[4,7,8]
+print(fav_num[0])
+
+###len is use to print the length ex: print(len(fav_num))
+
+fav_num.append(4)  # its for add the new value in the list
+
+vfav_num=[4,7,8]
+
+print(fav_num[0]) #this is use to print the length now the will be increased
+
+fav_num.insert(1,45)
+#        ^ this for insert the spesific place
+
+dle(fav_num[2])
+#this going to delete the index from the list
+
+print(fav_num)
+
+
+---------------------For loop--------------------
+#for loops
+
+for num in range(10):
+  print("hidk")
+  print(num) 
+     ----------------
+for num in range(40):
+    print(num)
+for num in range(40):
+    print((num+1)*2) 
+
+
+-------------dictionarios----------------
+
+cats={"jane":6, "tom":14, "sara":8}
+
+cats["wilson"]=1    #its going to add a new value in dictionarios 
+
+del(cats["tom"])    
+
+print(len(cats))
+
+
+
+
+
+-----------------------------------------
+ex project prg
+
+###########spilitting a string###############
+
+text="""defd sfs df sdd  ddddddd ddddd.......""" #consider text have a n num of codes 
+
+print(text.split()) #its split the entier string into the single single character
+                     
+print(len(text.split()))  #its prints the size of string
+
+
+
+############### word counting projrct########
+
+text="a b c a a b"
+print(text.split())
+
+#o/p is ['a','b','c','a','a','b']
+
+character_count={}
+
+for character in text.split():
+    print(character)
+#o/p a
+     b
+     c
+     a
+     a
+     b
+
+for character in text.split():
+     if character in character_count:
+          character_count[character]+=1
+     else:
+         character_count[character]=1
+print(character_count)
+--------------------------------------------------------------------------------
+
+###functions ############################
+def hello():
+  print("hlo dinesh")
+
+#hello() ----> its print the  hlo dinesh
+
+for x in range(100):
+   hello()-----> this is going to print the hlo dinesh as 100 times
+
+-----------------------------------------------------------------------------------
+#########parameters###############
+
+def doginfo(age,name):
+            #here age and names are the parameters
+    print(f"my dog name is {name} and age is {age}")
+doginfo(12,"sara")
+
+
+--------------------------------------------------------------------------------------
+
+***************retuen****************
+
+def uppercase(text):
+    return text.upper()
+print(uppercase("dinesh"))
+
+
+
+names=["dk", "ak", "sk"]
+for name in names:
+    print((name).upper())  
+
+ex prg: print(("hi dinesh").upper()) ------>o/p HI DIENSH
+
+****************************************************************************
+
+#ex pr for upper and lower case:
+
+
+user_text=input("enter your text: ")
+user_input=input("enter your 1 for upper 2 for lowear: ")
+if user_input=="1":
+    print(user_text.upper())
+else:
+    print(user_text.lower())
+
+***************************************************
+#guess the num game loop
+
+guess=int(input("whats your guess?: ")
+correct_num=5
+guess_count=1
+
+while guess != correct_num:
+   guess_count+=1
+   guess = int(input("whats your guess?: ")
+
+print(f"congrats! the right answer was {correct_num} it took you {guess_count} guess.")
+
+
+************************************************
+import random
+import time
+
+print ("hi welcome to the guessing game. im going to pick a num between 1 and 100")
+time.sleep(3)
+print("picking a num...")
+time.sleep(2)
+guess=int(input("whats your guess?: "))
+correct_num=random.randint(1,100)
+guess_count=0
+
+while guess != correct_num:
+    guess_count+=1
+  
+    if guess > correct_num:
+      guess = int(input("wrong. you need to guess higher.whats your guess?: "))
+    else:
+       guess = int(input("wrong. you need to guess lower.whats your guess?: "))
+
+print(f"congrats! the right answer was {correct_num} it took you {guess_count} guess.")
+
+
+--------------------------------------------------------------------------------
+import random
+import time
+
+print ("hi welcome to the guessing game. im going to pick a num between 1 and 100")
+time.sleep(3)
+print("picking a num...")
+time.sleep(2)
+guess=int(input("whats your guess?: "))
+correct_num=random.randint(1,100)
+guess_count=0
+
+while guess != correct_num:
+    guess_count+=1
+    if guess_count<5:
+        if guess < correct_num:
+          guess = int(input("wrong. you need to guess higher.whats your guess?: "))
+        else:
+           guess = int(input("wrong. you need to guess lower.whats your guess?: "))
+    else:
+        print("you loosed")
+        break
+
+if guess == correct_num:
+   print(f"congrats! the right answer was {correct_num} it took you {guess_count} guess.")
+
+
+
+
+
+
+
+
+
+
+
+
