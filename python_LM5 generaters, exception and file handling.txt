@@ -1,0 +1,89 @@
+generaters
+
+
+def sque_num_gen(num):
+   for i in range(1,num+1):
+       yield i*i
+
+print(sque_num_gen(10))      #it's return as a iterable object
+ 
+#to print this you can loop
+
+
+myoutput = sque_num_gen(10)
+for i in myoutput:
+    print(i)
+
+
+
+---------------------------------------------------------------
+ modules
+
+                                 #email.py
+
+import email as e
+
+or 
+
+to import particular function
+
+from email import otp,message
+
+
+print(email.otp())
+
+
+-------------------------------------------------------------------------
+
+EXCEPTION HANDLING
+
+try:
+  num =int(input("enter a num"))
+  den =int(input("enter a den"))
+  result =num/den
+  print(result)
+
+except zerodevisionerror:  #you can pick the num and add here   like elif
+   print("you can't devide  by zero")
+
+or 
+except zerodevisionerror as e:  
+   print(e)                                #you can print the error message here
+   print("you can't devide  by zero")
+
+
+except exception:                    # this is general exception like else
+   print("some error occur")
+
+
+
+else:
+  print(result)                 # you can add else if you don't get any error it will run
+
+
+finally:                            #it will run all time with or without error (example you use this for file closing)
+   print("this will always execute")
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+file handling
+
+with open('myfile.txt') as file:             #file not in the same location you can past the path
+    print(file.read())
+
+print(file.closed)   o/p->True because the file is closed in that block
+ 
+
+write
+
+txt ="it will erase and replace the text"
+with open('myfile.txt', 'w') as file:
+     f.write(txt)
+
+append
+      
+txt ="it will erase and replace the text"
+with open('myfile.txt', 'a') as file:
+     f.write(txt)  
