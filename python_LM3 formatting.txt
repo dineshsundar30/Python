@@ -1,0 +1,75 @@
+string formating
+
+name = "dinesh"
+like1 = "banana"
+like2 = "apples"
+
+test = '{} likes {} and {} ' 
+print(text.format(name,like1,like2))
+
+-----------------------------------------
+
+
+print('{} likes {} and {}'.format(name,like1,like2))
+
+----------------------------------------------------
+
+test = '{0} likes {1} and {2} ' 
+print(text.format(name,like1,like2))
+
+or
+
+test = '{0} likes {2} and {1} ' 
+print(text.format(name,like1,like2))
+
+------------------------------------------------------
+
+test = '{name} likes {like1} and {like22}' 
+print(text.format(name="dinesh",like1="apple",like2="banana"))
+print(text.format(name="dinesh",like2="apple",like1="banana"))
+
+
+
+******************************************************************
+
+padding
+
+
+print("********{msg}*********".format(msg="welcome"))
+
+print("********{msg:20}*********".format(msg="welcome"))
+
+left align
+print("********{msg:<20}*********".format(msg="welcome"))
+
+right align
+print("********{msg:>20}*********".format(msg="welcome"))
+
+center align
+print("********{msg:^20}*********".format(msg="welcome"))
+
+------------
+print("********{:^20}*********".format("welcome"))
+
+
+-------------------------------------------------------------------------------------
+
+formatting number
+
+pi = 3.14159
+
+print("this val of pi is {:.2f}".format(pi))
+
+
+--------------------------------------------------
+
+num = 1000000000
+print("the num is{:,}".format(num))
+
+
+And B for binary, o for octal, x or X for hexa, E for scientific 
+
+num = 1000000000
+print("the num is{:b}".format(num))
+
+
