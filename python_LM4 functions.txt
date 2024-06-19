@@ -1,0 +1,147 @@
+def greet(name):                     #name - rameter 
+   print("hlo" + name)
+   print("welcome, how are you")
+
+name = "dk"
+greet(name)  #passing arguments
+
+name="sk"
+greet(name)
+
+--------------------------------
+def greet(name,age):
+  print(name+ "welcome"+" "+ age)
+
+greet("dk",12)  # Here order is importent
+
+-------------------------------------
+using key word orgument
+
+def greet(name,age):
+  print(name+ "  welcome" + " " +str(age))
+
+greet(age=15, name="dk")  #here we can change the order
+
+
+------------------------------------------------------------------
+
+return
+
+def sum(num):
+      result = num*(num+1)/2
+   return result
+
+or 
+
+def sum(num):
+
+   return num*(num+1)/2
+
+
+finalresult = sum(2)
+print(finalresult) 
+
+
+-----------------------------------------
+args function 
+
+you can pass n number of arguments using this agrs
+
+def total(*args):   # here you need use * and can assign any name like *dinesh
+   sum = 0                        and it's pack the input return as tupuls
+   for i in args:
+       sum = sum+i
+   return sum
+
+
+print(total(5,3,2,52,5,6,1))
+
+-----------------------------------------------------------------------------
+
+Kwargs
+
+
+ # here you need use ** and can assign any name like *dinesh, and it's pack the input return as dictionary
+
+def print_drr(**kwargs):
+          for key,val in kwargs.items():
+          print(val)
+
+
+
+print(doorno="6/90",city="dpi",name="dk")
+
+
+------------------------------------------------------------------------------------------
+
+default 
+
+def greet(fname, lname="")   #   here ""  if you keet empty it's wont print anything and argument not required for this or you can name default values "noname"
+  print(fname+lname)
+
+greet(dk)
+
+-----------------------------------------------------------------------------------------------------
+
+
+def printList(list):
+    for i in list:
+       print(i.title())
+
+name=["dk","ak","sk","pk"]
+printList(name)
+
+
+
+----------------------------------------
+
+To changing values in list
+
+
+def printList(list):
+    for i in range(0,len(list)):
+       list[i] = list[i].title()
+
+
+name=["dk","ak","sk","pk"]
+printList(name)
+print(name)
+
+OR if you don't want to change the original list
+
+def printList(list):
+    for i in range(0,len(list)):
+       list[i] = list[i].title()
+       print(list[i])
+
+
+name=["dk","ak","sk","pk"]
+printList(name[:])
+print(name)
+
+
+-------------------------------------------------------------------
+
+
+Note: if a function called inside a function means recursion
+
+def fact(num):
+   if num==0:
+        return 1
+   return num*fact(num-1)
+
+
+print(fact(4))
+
+------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
