@@ -1,0 +1,130 @@
+user:
+ attributes:
+user name, pwd, email_id
+
+methods:
+ register,login,changename
+
+------------------------------------------------------------------
+#Keep a class name's first letter as capital 
+
+#in class file
+
+class User:
+
+def __init__(self,user_name,pwd):
+       self. user_name = user_name      #instance variable
+       self.pwd = pwd
+
+#in main.py
+
+from classfile import User
+
+user1 = User("dinesh","dineshok01")
+user2 = User("dinesh2","dineshok02")
+
+
+#to access the methods
+user1.regester()
+user1.login()
+
+print(user1.user_name)  # this calls encaptsulation
+
+----------------------------------------------------------------
+
+Class variable
+             ---
+Can keep the common variables as a class variable
+
+#in class file
+
+class User:
+
+     users = 0
+def __init__(self,user_name,pwd):
+       self. user_name = user_name      #instance variable
+       self.pwd = pwd
+       User.users += 1                  
+
+#you can able to access class with the class names only avoid using object name
+
+#in main.py
+
+from classfile import User
+
+print(User.users)
+
+#you can able to access class with the class names only avoid using object name
+--------------------------------------------------------------
+
+Inheritance
+
+we access the all parent class from the child class but we can't able to access the child class using the parent cls
+
+multiple inheritance 
+ 
+class teacher(user,student)
+
+--------------------------------------------------------------------------
+
+method overriding 
+
+if you have one class called user in parent cls and after you give same name in your child cls that method that overwrite that
+
+----------------------------------
+
+method chaining  
+
+user1.login().greet()
+
+#note here you need to add * return self * at the end of the first menthod
+
+
+-----------------------------------------
+super function
+
+
+class User:
+
+     users = 0
+def __init__(self,user_name,pwd):
+       self. user_name = user_name      
+       self.pwd = pwd
+       User.users += 1 
+
+ 
+class student(user):
+      
+        def__init__(self,user_name,pwd,fee,course)
+          super().__init__(user_name,pwd)
+          self.fee=fee
+          self.course=course
+        
+          #also you can use to call
+        def greet(self):
+          super().greet() 
+#while using we face some issue when you use the multiple inheritance try to avoid
+
+-----------------------------------------------------------
+
+abstract class
+
+from abc import ABC,abstractmethod
+
+#you can't create object for abstraction class
+#classes inheriting abstract class must override all abstract methods
+
+class vehicle(ABC):
+       @abstractmethod                 
+       def start(self):
+          pass
+
+class bick(vehical):
+   def start(self):
+     print("hi welcome")
+
+
+
+
+
+
