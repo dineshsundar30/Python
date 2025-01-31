@@ -18,7 +18,7 @@ def dataLoad():
 def crossBrowser(request):   # we need to use request in Parameterizing test with multiple data sets using Fixtures
     return request.param
 
---------------
+--------------or------------------------
 @pytest.fixture(params=[("chrome","Rahul","shetty"), ("Firefox","shetty"), ("IE","SS")])
 def crossBrowser(request):
     return request.param
