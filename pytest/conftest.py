@@ -1,6 +1,6 @@
 import pytest
-#if you want to give a scope in class you should create a excat file name with conftest.py then this will fixture will be availabe all pytest file in the specfic folder 
-
+#if you want to declear fixture, create a excat file name with conftest.py then this will fixture will be availabe all pytest file in the specfic folder 
+#if you used scope="class" it will run only one before and after the class:
 @pytest.fixture(scope="class")
 def setup():
     print("I will be executing first")    #this will run as prerequist steps in function
