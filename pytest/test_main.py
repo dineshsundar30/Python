@@ -68,7 +68,7 @@ class TestExample:
         print("i will execute steps in fixtureDemo3 method")
 
 
---- if we are not declering class level we don't need to use self here----
+--- if we are not declering class level we don't need to use self here and we need to pass that fixture in all methods in this ----
 
 def test_crossBrowser(crossBrowser):
     print(crossBrowser[1])
