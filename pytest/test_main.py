@@ -2,9 +2,9 @@
 #pytest method names should start with test
 #Any code should be wrapped in method only
 #Method name should have sense
-#to run all the function in a directory -->py.test
-# -k stands for method names execution like py.test -k <functionname> -v -s    #--->s to print all counsol logs in out put,  -v stands for verbose to provide more info metadata
-#you can run specific file with py.test <filename>   like py.test <filename> -v -s 
+#to run all the function file in a directory -->py.test
+#you can run specific file with py.test <filename>   like py.test <filename> -v -s
+# -k stands for method names execution like py.test -k <functionname> -v -s    #--->s to print all counsol logs in out put,  -v stands for verbose to provide more info metadata and here you can pass the partial name for your function name will run all the method which is having  the key word
 # you can mark (tag) tests @pytest.mark.smoke and then run with -m  like py.test -m somke -v -s
 #you can skip tests with @pytest.mark.skip
 #@pytest.mark.xfail  here it will run but don't show in output
