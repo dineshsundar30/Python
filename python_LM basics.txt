@@ -28,9 +28,17 @@ count = "10"
 print(int(count)+1)
 count1 = "10.1"
 print(int(float(count1))+2)
+-----------------------------------------------------------------
 
+we can print the num in this way also without casting or concertinaing
 
+name=input()
+score=int(input())
+department=input()
 
+print("my name is", name)
+print("my score is", score/10 ,"/10")
+print("my department is", department)
 
 -----------------------------------------------------------------
 a=5
@@ -51,7 +59,7 @@ print(a**2) # to find square
 
 import  math
 a=4.25
-print(math.ceil(a)) # to round the next num
+print(math.ceil(a)) # to round the next num but while converting the float data type to int it will ignore the last decimal event it's .9
 print(math.floor(a))  # to round the previous num
 
 
@@ -62,7 +70,8 @@ print(a%2)
 
 print(math.log2(a))
 -------------------------------------------------------
-height = float(input("What's your heigt : "))
+
+height = float(input("What's your heigt : "))   # in python all input consider as a string so we need to type cast
 height_inches = "{:.2f}".format(height/2.54)     #to format
 print(type(height))
 print("you are "+str(height)+"cm")
@@ -77,5 +86,3 @@ print("name :"+name)
 print("email :"+email)
 print("phone numbe :"+num)
 print("*" * 50)
-
-
