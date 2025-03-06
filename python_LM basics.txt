@@ -4,15 +4,22 @@ print(len(message))
 name = "dinesh's money"
 name1 = '"dinesh"'
 
-#string functions
-print(message.upper())   #invoking a method
-print(message.lower())
-print(message.title())
-print(message.find("h"))    # if the value does't exist it will retuern -1
-print(message.count("a"))   #will print the count of that value
-print(message.replace("a", "s"))
-print(message.isalpha())
-print(message.isdigit())
+#-------functions and method------
+
+#used to perform a specified task
+message= "hi"
+name=" welcome dk"
+print(name.upper()) ---#here .upper is method basically invoking a mathod
+print(name.lower())
+print(name.find("dk"))  --> use to find the index of the latter
+print(len(name))
+print(name.count("d"))  --> use to count the latter
+print(name.replace("d", "a")
+print(name.isalpha())
+print(name.isdigit())
+
+function - we can call directly 
+methon we need to invoking method using . opperater
 
 #multipul assinment
 name,age,dob = "dk",24,2000
@@ -40,29 +47,27 @@ print("my name is", name)
 print("my score is", score/10 ,"/10")
 print("my department is", department)
 
------------------------------------------------------------------
-a=5
-b=6
-print(a+b)
-print(a/b)
+#---------math functions---------------
+a=5.5
+print(round(a))--o/t 6
+a=-5
+print(abs(a))--o/t 5 absolut value, if its a=5 means it return 5 only 
+
+print(pow(a, 3))
+or
+a**3
+
+print(math.factorial(12))
+
+a=3
+b=4
 print(max(a,b))
-print(min(a,b))
+print(minn(a,b))
 
-a=5.3
-print(round(a))
-print(abs(a))
-
-print(pow(a,3))
-print(a**3) # to find power
-print(5**3) # to find power
-print(a**2) # to find square
-
-import  math
-a=4.25
-print(math.ceil(a)) # to round the next num but while converting the float data type to int it will ignore the last decimal event it's .9
-print(math.floor(a))  # to round the previous num
-
-
+import math
+a=1
+print(math.ceil(a)) --it's round the a with the next num
+print(math.floor(a))  -- it's round thr a with the previous number
 
 a=4.4
 print(math.factorial(7))
