@@ -5,51 +5,16 @@ o/p  nick's pizza, the "best" there is     ------>  #\'is use to denoted that th
 \t- tabspace
 \n - nextline
 
-#-------format----------
 
-height = float(input("whats your height: "))
-height_inches = "{:.2f}".formate(height/2.54)  ---<syntax  #it will print the last 2 decimal point in the float
+#for printing we can use below method without cast and concertinaing 
 
-#-------functions and method------
+name=input()
+score=int(input())
+department=input()
 
-#used to perform a specified task
-message= "hi"
-name=" welcome dk"
-print(name.upper()) ---#here .upper is method basically invoking a mathod
-print(name.lower())
-print(name.find("dk"))  --> use to find the index of the latter
-print(len(name))
-print(name.count("d"))  --> use to count the latter
-print(name.replace("d", "a")
-print(name.isalpha())
-print(name.isdigit())
-
-function - we can call directly 
-methon we need to invoking method using . opperater
-
-#---------math functions---------------
-a=5.5
-print(round(a))--o/t 6
-a=-5
-print(abs(a))--o/t 5 absolut value, if its a=5 means it return 5 only 
-
-print(pow(a, 3))
-or
-a**3
-
-print(math.factorial(12))
-
-a=3
-b=4
-print(max(a,b))
-print(minn(a,b))
-
-import math
-a=1
-print(math.ceil(a)) --it's round the a with the next num
-print(math.floor(a))  -- it's round thr a with the previous number
-
-
+print("my name is",name)
+print("my score is",score/10,"/10")
+print("my department is",": ",department)
 
 
 #--------using variables in strings-------
@@ -151,7 +116,7 @@ vfav_num=[4,7,8]
 print(fav_num[0]) #this is use to print the length now the will be increased
 
 fav_num.insert(1,45)
-#        ^ this for insert the spesific place
+#        ^ this for insert the specific place
 
 dle(fav_num[2])
 #this going to delete the index from the list
@@ -371,15 +336,3 @@ while guess != correct_num:
 
 if guess == correct_num:
    print(f"congrats! the right answer was {correct_num} it took you {guess_count} guess.")
-
-
-
-
-
-
-
-
-
-
-
-
