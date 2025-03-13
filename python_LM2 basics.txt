@@ -1,20 +1,26 @@
 -----------string slicing---------------
 
-string="happy"
-print(string[0])
-print(string[0:2])
-print(string[0:3])
-print(string[0:5])
+name="happy learning"
+print(name[0])
+print(name[0:2])
+print(name[0:3])
+print(name[0:5])
 print(string[0:])
 
-print(string[-1])
-print(string[3:])
-print(string[2:])
-print(string[1:])
-print(string[0:])
+print(name[-1:-2:-1])
+print(name[-1:-3:-1])
+print(name[-1:-4:-1])
+print(name[-1:-5:-1])
+print(name[-1:-6:-1])
 
-print(string[2:10:3])
-print(string[::-1])
+print(name[2:10:3])
+print(name[::2])   # it will print the step of 2 values
+
+print(name[2:-2])
+or we also use the slicing method too
+
+a=slice(2,-2)
+print(name[a])
 
 -----------list------------------
 
@@ -94,7 +100,7 @@ if tup:
 
 #----------------------------dictionaries ------------------------------
 
-user = {"name":"dk", "age":24, "salary":2000}   # dictionaries will noont maintain teh order
+user = {"name":"dk", "age":24, "salary":2000}   # dictionaries will not maintain the order
 print(user)        # we need to give unique keys
 
 
@@ -146,6 +152,8 @@ print(user[fav_food][0])
 #------------set---------------
 
 unique , not ordered
+don not allow dupilicates
+we can not modify like a[2]=2 but we can add,update,remove,pop()
 
 names = {"dk","ak","sk","pk"}
 print(names)
