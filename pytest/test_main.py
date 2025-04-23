@@ -10,7 +10,8 @@ here using this -k we can run methods from different files where that particular
 # you can mark (tag) tests @pytest.mark.smoke and then run with -m which is stands for mark like py.test -m somke -v -s
 #you can skip tests with @pytest.mark.skip  then run the all the test cases with <py.test -v -s> all will run except this function
 #@pytest.mark.xfail  here it will run but don't show in output pass or fail
-#fixtures are used as setup and tear down methods for test cases- conftest file to generalize fixt
+#fixtures are used as setup and tear down methods. for common setup and teardown create conftest file to generalize fixtures
+#if you want to declear fixture, create a excat file name with conftest.py then this will fixture will be availabe all pytest file in the specfic folder 
 #fixture and make it available to all test cases (fixture name into parameters of method)
 # datadriven and parameterization can be done with return statements in tuple format
 #when you define fixture scope to class only, it will run once before class is initiated and at the end
