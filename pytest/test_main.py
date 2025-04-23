@@ -1,3 +1,4 @@
+'''
 # Any pytest file should start with test_ or end with _test
 #pytest method names should start with test
 #Any code should be wrapped in method only
@@ -5,7 +6,7 @@
 #to run all the function file in a directory -->py.test
 #you can run specific file with py.test <filename>   like py.test <filename> -v -s
 # -k stands for method names execution like py.test -k <functionname> -v -s    #--->s to print all counsol logs in out put,  -v stands for verbose to provide more info metadata and here you can pass the partial name for your function name will run all the method which is having  the key word
-here useing this -k we can run methods from diffrent files
+here using this -k we can run methods from different files
 # you can mark (tag) tests @pytest.mark.smoke and then run with -m which is stands for mark like py.test -m somke -v -s
 #you can skip tests with @pytest.mark.skip  then run the all the test cases with <py.test -v -s> all will run except this function
 #@pytest.mark.xfail  here it will run but don't show in output pass or fail
@@ -13,7 +14,7 @@ here useing this -k we can run methods from diffrent files
 #fixture and make it available to all test cases (fixture name into parameters of method)
 # datadriven and parameterization can be done with return statements in tuple format
 #when you define fixture scope to class only, it will run once before class is initiated and at the end
-
+'''
 
 import pytest
 
