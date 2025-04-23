@@ -15,6 +15,7 @@ here using this -k we can run methods from different files where that particular
 #fixture and make it available to all test cases (fixture name into parameters of method)
 # datadriven and parameterization can be done with return statements in tuple format
 #when you define fixture scope to class only, it will run once before class is initiated and at the end
+#if you want to create a html report use pip install pytest-html and pytest --html=report.html -s -v
 '''
 
 import pytest
