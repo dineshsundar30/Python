@@ -34,6 +34,16 @@ def test_SecondCreditCard():
     a = 4
     b = 6
     assert a+2 == 6, "Addition do not match"
+---------------------------------------------------------
+#Fixture
+
+@pytest.fixture()
+def setup():
+    print("I will be executing first")    #this will run as prerequist steps in function
+    yield                                 # you can define anything that you want to execute after your menthod like closeing browser you can define after this yield keyword
+    print(" I will execute last")    
+def test_fixtureDemo(setup):
+        print("i will execute steps in fixtureDemo method")
 
 
 --------using usefixtures from conftest--------
