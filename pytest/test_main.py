@@ -17,6 +17,8 @@ here using this -k we can run methods from different files where that particular
 # datadriven and parameterization can be done with return statements in tuple format
 #when you define fixture scope to class only, it will run once before class is initiated and at the end
 #if you want to create a html report use pip install pytest-html and pytest --html=report.html -s -v
+
+We can run like this also using all the things like --> pytest -n 2 -m smoke --browser_name firefox --html=reports/report.html
 '''
 
 import pytest
