@@ -9,6 +9,7 @@
 here using this -k we can run methods from different files where that particular menthod have that keyword
 # you can mark (tag) tests @pytest.mark.smoke and then run with -m which is stands for mark like py.test -m somke -v -s
 #you can skip tests with @pytest.mark.skip  then run the all the test cases with <py.test -v -s> all will run except this function
+#to run the test parallel we should pip install pytest-xdist install this and we need to use pytest -n 2 #here if you give to 2 test will run parallel 3 means 3 test will run
 #@pytest.mark.xfail  here it will run but don't show in output pass or fail
 #fixtures are used as setup and tear down methods. for common setup and teardown create conftest file to generalize fixtures
 #if you want to declear fixture, create a excat file name with conftest.py then this will fixture will be availabe all pytest file in the specfic folder 
