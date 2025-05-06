@@ -12,13 +12,19 @@ methods:
 
 class User:
 
-def __init__(self,user_name,pwd):
+  def __init__(self,user_name,pwd):
        self. user_name = user_name      #instance variable
        self.pwd = pwd
 
+  def register(self):
+	print("registering...")
+
+  def login(self):
+	print("logging in..")
+
 #in main.py
 
-from classfile import User
+from class file import User
 
 user1 = User("dinesh","dineshok01")
 user2 = User("dinesh2","dineshok02")
@@ -28,7 +34,7 @@ user2 = User("dinesh2","dineshok02")
 user1.regester()
 user1.login()
 
-print(user1.user_name)  # this calls encaptsulation
+print(user1.user_name)  # this calls encapsulation
 
 ----------------------------------------------------------------
 
@@ -46,7 +52,7 @@ def __init__(self,user_name,pwd):
        self.pwd = pwd
        User.users += 1                  
 
-#you can able to access class with the class names only avoid using object name
+#you can able to access class variable with the class names, recemented to avoid using object name
 
 #in main.py
 
@@ -54,22 +60,22 @@ from classfile import User
 
 print(User.users)
 
-#you can able to access class with the class names only avoid using object name
+
 --------------------------------------------------------------
 
 Inheritance
 
 we access the all parent class from the child class but we can't able to access the child class using the parent cls
 
-multiple inheritance 
+
  
-class teacher(user,student)
+class teacher(user)
 
 --------------------------------------------------------------------------
 
 method overriding 
 
-if you have one class called user in parent cls and after you give same name in your child cls that method that overwrite that
+if you have one class called user in parent class and after you give same name in your child class that method that overwrite that
 
 ----------------------------------
 
@@ -77,7 +83,7 @@ method chaining
 
 user1.login().greet()
 
-#note here you need to add * return self * at the end of the first menthod
+#note here you need to add * return self * at the end of the first method
 
 
 -----------------------------------------
@@ -112,7 +118,8 @@ abstract class
 from abc import ABC,abstractmethod
 
 #you can't create object for abstraction class
-#classes inheriting abstract class must override all abstract methods
+#classes inheriting abstract class must implement (override) all abstract methods
+    if we not implement that that child also will considered as abstract class
 
 class vehicle(ABC):
        @abstractmethod                 
@@ -122,9 +129,3 @@ class vehicle(ABC):
 class bick(vehical):
    def start(self):
      print("hi welcome")
-
-
-
-
-
-
