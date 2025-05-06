@@ -1,18 +1,17 @@
-def greet(name):                     #name - rameter 
+def greet(name):                     #name - parameter 
    print("hlo" + name)
    print("welcome, how are you")
 
-name = "dk"
-greet(name)  #passing arguments
+greet("dk")  #passing arguments dk is the argument
 
-name="sk"
+name="Ak"
 greet(name)
 
 --------------------------------
 def greet(name,age):
   print(name+ "welcome"+" "+ age)
 
-greet("dk",12)  # Here order is importent
+greet("dk",12)  # Here order is importent and it's called as positional argument's
 
 -------------------------------------
 using key word orgument
@@ -20,7 +19,9 @@ using key word orgument
 def greet(name,age):
   print(name+ "  welcome" + " " +str(age))
 
-greet(age=15, name="dk")  #here we can change the order
+greet(age=15, name="dk")  #here we can change the order and it's called as keyword arguments
+
+
 
 
 ------------------------------------------------------------------
@@ -71,10 +72,17 @@ def print_drr(**kwargs):
 
 print(doorno="6/90",city="dpi",name="dk")
 
+def greet(**i):
+    for key,val in i.items():
+        print(key+": "+ val, end=" ")
+
+greet(name=input("name: "),age=input("age: "),city=input("city: "),state=input("State: "))
+
+
 
 ------------------------------------------------------------------------------------------
 
-default 
+default arguments
 
 def greet(fname, lname="")   #   here ""  if you keet empty it's wont print anything and argument not required for this or you can name default values "noname"
   print(fname+lname)
@@ -121,7 +129,10 @@ print(name)
 
 
 -------------------------------------------------------------------
+in function we can return only one thing if you want you return you can pack it in list or dictionary 
 
+
+------------------------------------------------------------------------
 
 Note: if a function called inside a function means recursion
 
@@ -134,14 +145,3 @@ def fact(num):
 print(fact(4))
 
 ------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
