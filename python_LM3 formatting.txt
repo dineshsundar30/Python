@@ -60,7 +60,7 @@ pi = 3.14159
 
 print("this val of pi is {:.2f}".format(pi))
 
-
+print("this val of pi is {:.3f}".format(pi))
 --------------------------------------------------
 
 num = 1000000000
@@ -71,5 +71,3 @@ And B for binary, o for octal, x or X for hexa, E for scientific
 
 num = 1000000000
 print("the num is{:b}".format(num))
-
-
