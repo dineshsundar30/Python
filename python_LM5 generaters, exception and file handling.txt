@@ -10,7 +10,7 @@ print(sque_num_gen(10))      #it's return as a iterable object
 #to print this you can loop
 
 
-myoutput = sque_num_gen(10)
+myoutput = sque_num_gen(10)    # here it will allow as to convert that myoutput as list like print(list(myoutput)) but we should not use that that's the purpose of generater
 for i in myoutput:
     print(i)
 
@@ -23,14 +23,15 @@ for i in myoutput:
 
 import email as e
 
+print(email.otp())  # here we need to use that file name . to access the function
+
 or 
 
-to import particular function
+to import particular function 
 
-from email import otp,message
-
-
-print(email.otp())
+from email import otp,message       #here we can use directly that function name but first import file_name is suggestable because
+ 						it will create a conflicts issue if we have name function name in 2 file
+print(otp())
 
 
 -------------------------------------------------------------------------
@@ -43,18 +44,17 @@ try:
   result =num/den
   print(result)
 
-except zerodevisionerror:  #you can pick the num and add here   like elif
+except zerodevisionerror: 
    print("you can't devide  by zero")
 
 or 
-except zerodevisionerror as e:  
-   print(e)                                #you can print the error message here
+except zerodevisionerror:  
    print("you can't devide  by zero")
 
 
-except exception:                    # this is general exception like else
+except exception:                    # this is general exception we should use the general exception in last or else all error fall under this exception
+   print(e)                                #you can print the error message here
    print("some error occur")
-
 
 
 else:
@@ -70,7 +70,7 @@ finally:                            #it will run all time with or without error 
 
 file handling
 
-with open('myfile.txt') as file:             #file not in the same location you can past the path
+with open('myfile.txt') as file:             #file not in the same location you can past the path and replace \ with the \\
     print(file.read())
 
 print(file.closed)   o/p->True because the file is closed in that block
@@ -84,6 +84,6 @@ with open('myfile.txt', 'w') as file:
 
 append
       
-txt ="it will erase and replace the text"
+txt ="it will not erase and append the text"
 with open('myfile.txt', 'a') as file:
      f.write(txt)  
