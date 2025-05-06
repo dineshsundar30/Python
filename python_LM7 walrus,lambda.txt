@@ -67,9 +67,25 @@ items= [(3456, "shoe", "790"),(2320,"phone", 25300), (2587,"note",80)]
 items.sort(key= lambda item:item[1])
 print(items)
 --------------------------------------------------------------------------
+sorting with index
+items = [(234,"ak",20000),(235,"pk",10000),(233,"ck",1000)]
+
+items.sort(key=lambda x:x[2])
+
+print(items)
+
+
+items.sort(key=lambda x:x[2],reverse=True)
+print(items)
+-------------------------------------------------------------------------
+
 tups sorted
-items= ((3456, "shoe", "790"),(2320,"phone", 25300), (2587,"note",80))
+items = ((234,"ak",20000),(235,"pk",10000),(233,"ck",1000))
 
-print(sorted(items, key= lambda item:item[1]))
+for tuples we can't use that sort method we should use shorted function
 
+print(sorted(items))
 
+print(sorted(items,key=lambda x:x[2]))
+
+print(sorted(items,key=lambda x:x[2],reverse=True))
