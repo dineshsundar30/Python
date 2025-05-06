@@ -1,0 +1,70 @@
+#Map
+
+items = [(3456, "shoe", 790), (2320, "phone", 25300), (2587, "note", 80)]
+inr_to_usd = lambda item: (item[0], item[1], item[2] / 74)
+inr_to_usd2 = lambda item: (item[0], item[1],"{:.2f}".format(item[2] / 74))
+inr_to_usd3 = lambda item: (item[1],"{:.2f}".format(item[2] / 74))
+mynewlist = list(map(inr_to_usd, items))
+mynewlist2 = list(map(inr_to_usd2, items))
+mynewlist3 = list(map(inr_to_usd3, items))
+print(mynewlist)
+print(mynewlist2)
+print(mynewlist3)
+
+#----------------------------------------------------
+
+val = [3,4,5,7,8,4,1]
+sqval = lambda x:x*x
+fsqlval = list(map(sqval,val))
+print(fsqlval)
+
+#----------------------------------------------------
+val = [3,4,5,7,8,4,1]
+def sqr(num):
+    return num*num
+
+print(list(map(sqr,val)))
+
+#----------------------------------------------------
+
+student = [("maths","sk",90),("science","pk",80),("biology","ak",50)]
+newlist = lambda x:(x[1],x[2])
+mplist = list(map(newlist,student))
+print(mplist)
+
+#----------------------------------------------------
+
+
+val=[3,4,2,1,5,3,4]
+newval = lambda x: "even" if x%2==0 else "odd"
+mapl = list(map(newval,val))
+print(mapl)
+
+
+============================================================================================================================================
+
+#filter
+
+student = [("maths","sk",90),("science","pk",80),("biology","ak",50)]
+iter = lambda x:x[1][0]=='a'
+myop =list (filter(iter,student))
+print(myop)
+
+
+===================================================================================================
+
+reduce
+
+reduce(function,iterable)
+
+--------------------------------------
+
+import functools
+vals = [4,5,6,3,1,3,4,2]
+sum = functools.reduce(lambda x,y:x+y , char)
+print(sum)
+
+chars = ["p","y","t","h","o","n"]
+word = functools.reduce(lambda x,y:x+y , chars)
+print(word)
+
