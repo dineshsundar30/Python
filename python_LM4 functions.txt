@@ -49,7 +49,7 @@ args function
 you can pass n number of arguments using this agrs
 
 def total(*args):   # here you need use * and can assign any name like *dinesh
-   sum = 0                        and it's pack the input return as tupuls
+   sum = 0                        and it's pack the input return as tupuls and we are useing this for stright forword values
    for i in args:
        sum = sum+i
    return sum
@@ -63,6 +63,7 @@ Kwargs
 
 
  # here you need use ** and can assign any name like *dinesh, and it's pack the input return as dictionary
+and this we are using for key value pair 
 
 def print_drr(**kwargs):
           for key,val in kwargs.items():
@@ -70,7 +71,7 @@ def print_drr(**kwargs):
 
 
 
-print(doorno="6/90",city="dpi",name="dk")
+print_print_drr("doorno"="6/90","city"="dpi",name="dk")
 
 def greet(**i):
     for key,val in i.items():
