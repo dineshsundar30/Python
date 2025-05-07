@@ -63,7 +63,7 @@ Kwargs
 
 
  # here you need use ** and can assign any name like *dinesh, and it's pack the input return as dictionary
-and this we are using for key value pair 
+and this we are using for variable_name and value  
 
 def print_drr(**kwargs):
           for key,val in kwargs.items():
