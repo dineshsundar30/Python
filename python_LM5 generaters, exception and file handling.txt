@@ -23,7 +23,7 @@ for i in myoutput:
 
 import email as e
                       #group of similler instruction we can write in one file and it's called one module
-print(email.otp())  # here we need to use that file name . to access the function
+print(e.otp())  # here we need to use that file name . to access the function
 
 or 
 
@@ -52,7 +52,7 @@ except zerodevisionerror:
    print("you can't devide  by zero")
 
 
-except exception:                    # this is general exception we should use the general exception in last or else all error fall under this exception
+except Exception as e:                    # this is general exception we should use the general exception in last or else all error fall under this exception
    print(e)                                #you can print the error message here
    print("some error occur")
 
