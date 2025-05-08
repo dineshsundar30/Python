@@ -3,7 +3,7 @@ generaters
 
 def sque_num_gen(num):
    for i in range(1,num+1):
-       yield i*i
+       yield i*i                     #here we don't need to use return
 
 print(sque_num_gen(10))      #it's return as a iterable object
  
@@ -22,7 +22,7 @@ for i in myoutput:
                                  #email.py
 
 import email as e
-
+                      #group of similler instruction we can write in one file and it's called one module
 print(email.otp())  # here we need to use that file name . to access the function
 
 or 
