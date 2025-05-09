@@ -150,10 +150,11 @@ print(fact(4))
 user.py
 
 class User:
-   user = 0  #class variable
+   users = 0  #class variable
    def __init__(self,username,pwd):
        self.username = username #instamce variable
        self.pwd = pwd
+       User.users += 1   # If we need to access the class variable we need to use class name
 
 
    def register(self):
@@ -174,7 +175,10 @@ if we need to print the class method
 user1.login()
 user2.register()
 
-if we need to print the class variable
-print(user1.username)
+if we need to print the instance variable
+print(user1.username)  #you can call this variable with object
+
+if you want to access the class variable you can use like below class name + variable name
+print(User.users)
 
 
