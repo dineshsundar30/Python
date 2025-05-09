@@ -146,3 +146,34 @@ def fact(num):
 print(fact(4))
 
 ------------------------------------------------------------------
+
+user.py
+
+class User:
+   def __init__(self,username,pwd):
+       self.username = username #instamce variable
+       self.pwd = pwd
+
+
+   def register(self):
+      print('registering..')
+
+   def login(self):
+      print('logging in')
+
+--------
+if we need to call that class
+
+from user import User:
+
+user1 = User('kavitha','abc1234')
+user2 = User('kumar','123abc')
+
+if we need to print the class method 
+user1.login()
+user2.register()
+
+if we need to print the class variable
+print(user1.username)
+
+
