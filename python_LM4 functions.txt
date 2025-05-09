@@ -150,6 +150,7 @@ print(fact(4))
 user.py
 
 class User:
+   user = 0  #class variable
    def __init__(self,username,pwd):
        self.username = username #instamce variable
        self.pwd = pwd
