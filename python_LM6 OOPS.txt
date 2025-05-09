@@ -67,7 +67,17 @@ Inheritance
 
 we access the all parent class from the child class but we can't able to access the child class using the parent cls
 
+class user:
+	def temp():
+	  print("hi")
 
+class faculty(user):
+	def temp2():
+	  print("helllo")
+
+class tempfaculty(faculty)			#multi level Inheritance
+	def temp2():
+	  print("hi hello")
  
 class teacher(user)
 
