@@ -123,6 +123,11 @@ obj.show()  # Output: This is the child class
 ----------------------------------
 
 method chaining  
+user1 = user()
+user1.login()
+user1.greet()
+
+insted of that we can write like below
 
 user1.login().greet()
 
