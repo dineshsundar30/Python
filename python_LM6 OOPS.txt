@@ -150,7 +150,7 @@ def __init__(self,user_name,pwd):
 class student(user):
       
         def__init__(self,user_name,pwd,fee,course)
-          super().__init__(user_name,pwd)
+          super().__init__(user_name,pwd)			#here super will refer it's parent class
           self.fee=fee
           self.course=course
         
