@@ -1,3 +1,12 @@
+| Modifier       | Syntax       | Access Level            | Example            |
+| -------------- | ------------ | ----------------------- | ------------------ |
+| Public         | `name`       | Anywhere                | `obj.name`         |
+| Protected      | `_name`      | Class + Subclasses      | `obj._name`        |
+| Private        | `__name`     | Class only (mangled)    | `obj._Class__name` |
+| Special Method | `__init__()` | Python built-in (magic) | `__init__()`       |
+
+-----------------------------------------------------------------------------------------
+
 walrus operator  #:=
 
 name="dk"
