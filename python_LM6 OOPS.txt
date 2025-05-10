@@ -157,7 +157,9 @@ class student(user):
           #also you can use to call
         def greet(self):
           super().greet() 
-#while using we face some issue when you use the multiple inheritance try to avoid
+
+class student(user,faculty): 	#also this will create a dimand shap if we have multiple inheritance and that panarnt class also have parant class 
+#while using super in multiple iheritance we face some issue when you use the multiple inheritance try to avoid
 
 -----------------------------------------------------------
 
