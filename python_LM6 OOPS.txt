@@ -82,11 +82,43 @@ class tempfaculty(faculty)			#multi level Inheritance
 class teacher(faculty,tempfaculty):		#multiple Inheritance here with this object we can access pareant and grant pareant methoad also 
 	pass
 
---------------------------------------------------------------------------
+-------------------------------------------------------------------------- 
 
-method overriding 
 
+Method Overloading 
 if you have one class called user in parent class and after you give same name in your child class that method that overwrite that
+
+Defining multiple methods with the same name but different 
+parameters. 
+
+sample prg:
+
+class MathOperations: 
+	def add(self, a, b=0, c=0):  # Default arguments used for overloading 
+	return a + b + c
+ 
+math = MathOperations() 
+print(math.add(2))        # Output: 2 
+print(math.add(2, 3))     # Output: 5 
+print(math.add(2, 3, 4))  # Output: 9 
+
+-------------------------------------------------------------------------- 
+
+Method Overriding:
+
+Redefining a method from the parent class in the child class. 
+
+sample prg:
+class Parent: 
+	def show(self): 
+		print("This is the parent class") 
+
+class Child(Parent): 
+	def show(self):  # Overriding the parent method 
+		print("This is the child class") 
+
+obj = Child() 
+obj.show()  # Output: This is the child class 
 
 ----------------------------------
 
