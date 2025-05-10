@@ -79,7 +79,8 @@ class tempfaculty(faculty)			#multi level Inheritance
 	def temp2():
 	  print("hi hello")
  
-class teacher(user)
+class teacher(faculty,tempfaculty):		#multiple Inheritance here with this object we can access pareant and grant pareant methoad also 
+	pass
 
 --------------------------------------------------------------------------
 
