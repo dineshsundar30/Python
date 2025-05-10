@@ -17,7 +17,7 @@ class Library():
            elif book in self.available_books_list:
                print("you can len the book")
                self.available_books_list.remove(book)
-               self.books_lended_list.update({book:name})
+               self.books_lended_list.update({book:name})        #also we can use like self.books_lended_list[book] = name  # ✔️ Recommended
            else:
                if book not in self.available_books_list:
                    print("the book is already taken by "+ self.books_lended_list[book])
