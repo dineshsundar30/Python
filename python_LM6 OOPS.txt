@@ -213,5 +213,5 @@ bike1 = Bike()
 car1 = Car()
 
 # Pass objects
-set_color(bike1, 'blue')  # Output: Bike color set to: blue \n Bike is starting...
+set_color(bike1, 'blue')  # Output: Bike color set to: blue \n Bike is starting...   # we pass the object like a variable
 set_color(car1, 'red')    # Output: Car color set to: red \n Car is starting...
