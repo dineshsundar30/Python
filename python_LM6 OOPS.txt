@@ -179,3 +179,39 @@ class vehicle(ABC):
 class bick(vehical):
    def start(self):
      print("hi welcome")
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+passing object 
+
+# vehicles.py
+
+class Car:
+    color = None  # Class variable
+
+    def start(self):
+        print("Car is starting...")
+
+class Bike:
+    color = None  # Class variable
+
+    def start(self):
+        print("Bike is starting...")
+
+---------------------
+# main.py
+
+from vehicles import Car, Bike  # Import the classes
+
+# Duck typing function
+def set_color(obj, color): 
+    obj.color = color  # Instance variable
+    obj.start()	       # Duck typing: doesn't care if it's a Car or Bike
+
+# Create objects
+bike1 = Bike()
+car1 = Car()
+
+# Pass objects
+set_color(bike1, 'blue')  # Output: Bike color set to: blue \n Bike is starting...
+set_color(car1, 'red')    # Output: Car color set to: red \n Car is starting...
