@@ -86,7 +86,6 @@ class teacher(faculty,tempfaculty):		#multiple Inheritance here with this object
 
 
 Method Overloading 
-if you have one class called user in parent class and after you give same name in your child class that method that overwrite that
 
 Defining multiple methods with the same name but different 
 parameters. 
