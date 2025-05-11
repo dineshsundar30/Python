@@ -68,3 +68,56 @@ chars = ["p","y","t","h","o","n"]
 word = functools.reduce(lambda x,y:x+y , chars)
 print(word)
 
+**************************************************************************************************************************************************************
+
+List comprehension
+
+sq_list  = [i*i for i in range(1,11)]
+
+print(sql_list)
+
+
+--------------------------------------------------
+
+temp = [20,40,10,50,70,40]
+
+filered_temp = [x for x in temp if x<30]
+
+print(filered_temp)
+
+
+#To use else in list comprehension
+
+temp = [20,40,10,50,70,40]
+
+filered_temp = [i if i<30 else 'not less then 30' for i in temp]
+
+print(filered_temp)
+
+----------------------------------------------------------------------------------------------
+
+Dictionary comprehension
+
+
+cart = {'phone':2500.00,'mobile':1000.00,'battery':100.00,'headphone':300.00}
+
+cart_rounded = {i:round(cart[i]) for i in cart}
+
+or 
+#cart_rounded = {k:round(v) for k,v in cart.items()}
+
+print(cart_rounded)
+
+
+using If
+
+
+#cart_rounded = {k:round(v) for k,v in cart.items() if v>100}
+
+
+using else and if
+
+#cart_rounded = {key:round(val)*.9 if val>500 else val for key,val in cart.items()}
+
+
+
