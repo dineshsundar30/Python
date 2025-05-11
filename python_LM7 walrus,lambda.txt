@@ -27,7 +27,7 @@ print(mylist)
 --------------------------
 
 #Higher order function
-
+                              # it takes function as parameter and return a function
 def happy():
   print("jumping")
 def sad():
@@ -39,6 +39,10 @@ joy = happy
 joy() o/p --> jumping
 
 
+def feeling(fun):
+     fun()
+
+feeling(sad)          #here we can pass function name as a parameter
 ----------------------------------------------------------
 
 lambda  # you can use this for single expression 
