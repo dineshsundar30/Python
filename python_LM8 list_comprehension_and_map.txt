@@ -61,7 +61,7 @@ reduce(function,iterable)
 
 import functools
 vals = [4,5,6,3,1,3,4,2]
-sum = functools.reduce(lambda x,y:x+y , char)
+sum = functools.reduce(lambda x,y:x+y , vals)
 print(sum)
 
 chars = ["p","y","t","h","o","n"]
