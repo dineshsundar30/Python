@@ -1,4 +1,4 @@
-#Map
+#Map   map(function,iterable)
 
 items = [(3456, "shoe", 790), (2320, "phone", 25300), (2587, "note", 80)]
 inr_to_usd = lambda item: (item[0], item[1], item[2] / 74)
