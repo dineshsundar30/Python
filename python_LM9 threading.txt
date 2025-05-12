@@ -1,0 +1,39 @@
+import threading
+import time
+
+# First function
+def greet():
+    for i in range(3):
+        print("Hello")
+        time.sleep(1)
+
+# Second function
+def bye():
+    for i in range(3):
+        print("Goodbye")
+        time.sleep(1)
+
+# Create threads for each function
+t1 = threading.Thread(target=greet)
+t2 = threading.Thread(target=bye)
+
+# Start both threads
+t1.start()
+t2.start()
+
+# Wait for both to complete
+t1.join()
+t2.join()
+
+print("Both threads finished.")
+
+
+| Concept              | Shown in Code                |
+| -------------------- | ---------------------------- |
+| Create threads       | `threading.Thread()`         |
+| Start threads        | `thread.start()`             |
+| Wait for threads     | `thread.join()`              |
+| Count active threads | `threading.active_count()`   |
+| List all threads     | `threading.enumerate()`      |
+| Get current thread   | `threading.current_thread()` |
+| Naming threads       | `name="Worker-1"`            |
