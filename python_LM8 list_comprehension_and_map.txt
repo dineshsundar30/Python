@@ -119,5 +119,30 @@ using else and if
 
 #cart_rounded = {key:round(val)*.9 if val>500 else val for key,val in cart.items()}
 
+--------------------------------------------------------------------------------------
+dictionary = {key: function for key,val itterable}
+
+we can pass the fun in dictionary 
+
+def fun_disc(k,v):
+   if v=='mobile' or v=='phone':
+	v=round(v*.95)
+   return v
+
+new_car = {k:fun_disc(k,v) for k,v in cart.items()}
+
+print(new_car)
+
+------------------------------------------------------------------------------------
+
+ZPI     #it will zip two or more iterables as single iterable 
+
+items= ['phone','lamp','table','pen']
+price = [10000,200,10000,20]
+
+zipped = list(zip(items,prices)]   #it will pack as a tuple object 
+
+print(zipped)
+
 
 
