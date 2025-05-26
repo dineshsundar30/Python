@@ -24,6 +24,8 @@ for common setup and teardown create conftest file to generalize fixtures  '''
 #if you want to create a html report use pip install pytest-html and pytest --html=report.html -s -v
 
 We can run like this also using all the things like --> pytest -n 2 -m smoke --browser_name firefox --html=reports/report.html
+# To tun failed test cases in pytest use -->  pytest --last-failed
+
 '''
 
 import pytest
