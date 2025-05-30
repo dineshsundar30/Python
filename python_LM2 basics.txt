@@ -86,7 +86,7 @@ print(indian_state)
 
 #-------------tuples-----------
 tup = (3,4,65,2,1,3,2)
-print(tup)   # we can't change the valued in tuples but c=we can change the entire tuples
+print(tup)   # we can't change the valued in tuples but we can change the entire tuples
 
 print(tup[2])
 
