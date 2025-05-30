@@ -31,7 +31,7 @@ o/p today is 30 september and it's -17 degrees outside  ----> f is use to insert
 
 #-----------booleans-----------------------
 
-light_is_on=true
+light_is_on=True
 if light_is_on:
    print("the light is on")
    print("hello")
