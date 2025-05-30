@@ -33,7 +33,7 @@ print("your otp is"+str(otp))
 
 count = "10"
 print(int(count)+1)
-count1 = "10.1"
+count1 = "10.1"                                => here we have 10.1 so we can't directly chnage to int we need to first change into  float
 print(int(float(count1))+2)
 -----------------------------------------------------------------
 
