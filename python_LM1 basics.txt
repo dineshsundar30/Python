@@ -181,7 +181,7 @@ cats={"jane":6, "tom":14, "sara":8}
 
 cats["wilson"]=1    #its going to add a new value in dictionarios 
 
-del(cats["tom"])    
+del(cats["tom"])   or del cats["tom"]
 
 print(len(cats))
 
