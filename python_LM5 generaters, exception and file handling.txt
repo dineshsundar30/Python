@@ -44,17 +44,15 @@ try:
   result =num/den
   print(result)
 
-except zerodevisionerror: 
+except ZeroDivisionError: 
    print("you can't devide  by zero")
 
-or 
-except zerodevisionerror:  
-   print("you can't devide  by zero")
-
+except ValueError:
+    print("input is not an integer")
 
 except Exception as e:                    # this is general exception we should use the general exception in last or else all error fall under this exception
-   print(e)                                #you can print the error message here
-   print("some error occur")
+  print(e)                                #you can print the error message here
+  print("some error occur")
 
 
 else:
