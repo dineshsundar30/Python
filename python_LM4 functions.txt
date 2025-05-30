@@ -125,7 +125,7 @@ def printList(list):
 
 
 name=["dk","ak","sk","pk"]
-printList(name[:])
+printList(name[:])                    #use  [:] 
 print(name)
 
 
