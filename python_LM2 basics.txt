@@ -50,7 +50,7 @@ remove using del
 del cities[3]
 
 remove using pop()
-deleted = cities.pop()
+deleted = cities.pop() and deleted = cities.pop(1)   #we can pass the index too
 print(deleted)
 
 remove by value
