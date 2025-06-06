@@ -273,7 +273,24 @@ user_input=input("enter your 1 for upper 2 for lowear: ")
 if user_input=="1":
     print(user_text.upper())
 else:
-    print(user_text.lower())
+    print(user_text.lower()) 
+
+************************************************************************************************8
+                        Join
+
+def casereverse(name):
+    
+    output= ','.join([a.upper() if a.islower() else a.lower() for a in name ])
+    print(output)  
+    
+casereverse("DinesH")   O/P --> d,I,N,E,h
+----------------------------------
+def casereverse(name):
+    
+    output= ''.join([a.upper() if a.islower() else a.lower() for a in name ])
+    print(output)  
+    
+casereverse("DinesH")   O/P --> dINEh
 
 ***************************************************
 #guess the num game loop
