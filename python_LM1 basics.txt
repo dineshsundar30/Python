@@ -107,13 +107,14 @@ print(f"{fortune_text} your lucky number is:{lucky_num}")
 fav_num=[4,7,8]
 print(fav_num[0])
 
-###len is use to print the length ex: print(len(fav_num))
+print(len(fav_num))
+###len is use to print the length 
 
 fav_num.append(4)  # its for add the new value in the list
 
 vfav_num=[4,7,8]
 
-print(len(fav_num)) #this is use to print the length now the will be increased
+print(len(fav_num)) #this is use to print the length
 
 fav_num.insert(1,45)
 #        ^ this for insert the specific place
