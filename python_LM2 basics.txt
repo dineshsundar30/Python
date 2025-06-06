@@ -4,7 +4,11 @@ To reverse the list
 
 mynum = [1,2,3,4,5,6,7]
 print(mynum[::-1])
-
+or
+a='dineshkumar' 
+print(''.join(reversed(a))) 
+or
+print(a[::-1])
 **
 name="happy learning"
 print(name[0])
