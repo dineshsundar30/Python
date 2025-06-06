@@ -11,9 +11,9 @@ message= "hi"
 name=" welcome dk"
 print(name.upper()) ---#here .upper is method basically invoking a mathod
 print(name.lower())
-print(name.find("dk"))  --> use to find the index of the latter
+print(name.find("dk"))  --> use to find the index of the latter if noting found it will return -1
 print(len(name))
-print(name.count("d"))  --> use to count the latter
+print(name.count("d"))  --> use to count the latter if noting it will return 0
 print(name.replace("d", "a")
 print(name.isalpha())
 print(name.isdigit())
