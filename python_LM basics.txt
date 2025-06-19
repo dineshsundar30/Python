@@ -10,6 +10,7 @@ or print(input_str[::-1])          --> o/p - noitamotua
 
 voul=['a','e','i','o','u']  --> to reverse a list
 voul.reverse()
+print(voul)                       --> o/p - ['u', 'o', 'i', 'e', 'a']
 
 #-------functions and method------
 
