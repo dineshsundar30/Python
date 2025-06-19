@@ -22,11 +22,11 @@ def greet(name,age):
 greet(age=15, name="dk")  #here we can change the order and it's called as keyword arguments
 
 
-
-
 ------------------------------------------------------------------
 
 return
+
+for sum n natural numbers
 
 def sum(num):
       result = num*(num+1)/2
