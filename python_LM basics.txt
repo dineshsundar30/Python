@@ -5,8 +5,8 @@ name = "dinesh's money"
 name1 = '"dinesh"'
 
 input_str = "automation"   --> to reverse a string
-a = reversed(input_str)
-or input_str[::-1]
+print(list(reversed(input_str)))  -->  o/p - ['n', 'o', 'i', 't', 'a', 'm', 'o', 't', 'u', 'a']
+or print(input_str[::-1])          --> o/p - noitamotua
 
 voul=['a','e','i','o','u']  --> to reverse a list
 voul.reverse()
