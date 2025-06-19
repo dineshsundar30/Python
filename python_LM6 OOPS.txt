@@ -68,19 +68,22 @@ Inheritance
 we access the all parent class from the child class but we can't able to access the child class using the parent cls
 
 class user:
-	def temp():
-	  print("hi")
+    def temp(self):
+        print("hi")
 
 class faculty(user):
-	def temp2():
-	  print("helllo")
+    def temp2(self):
+        print("helllo")
+class tempfaculty(faculty):  # multi level Inheritance
 
-class tempfaculty(faculty)			#multi level Inheritance
-	def temp2():
-	  print("hi hello")
- 
-class teacher(faculty,tempfaculty):		#multiple Inheritance here with this object we can access pareant and grant pareant methoad also 
-	pass
+    def temp2(self):
+        print("hi hello")
+
+class teacher(tempfaculty):  # multiple Inheritance here with this object we can access pareant and grant pareant methoad also
+    pass
+
+use=teacher()
+use.temp()
 
 -------------------------------------------------------------------------- 
 
