@@ -6,6 +6,7 @@ name1 = '"dinesh"'
 
 input_str = "automation"   --> to reverse a string
 a = reversed(input_str)
+or input_str[::-1]
 
 voul=['a','e','i','o','u']  --> to reverse a list
 voul.reverse()
