@@ -4,6 +4,12 @@ print(len(message))
 name = "dinesh's money"
 name1 = '"dinesh"'
 
+input_str = "automation"   --> to reverse a string
+a = reversed(input_str)
+
+voul=['a','e','i','o','u']  --> to reverse a list
+voul.reverse()
+
 #-------functions and method------
 
 #used to perform a specified task
