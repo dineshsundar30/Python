@@ -10,7 +10,7 @@ here using this -k we can run methods from different files where that particular
 # you can mark (tag) tests @pytest.mark.smoke and then run with -m which is stands for mark like py.test -m somke -v -s
 #you can skip tests with @pytest.mark.skip  then run the all the test cases with <py.test -v -s> all will run except this function
 #to run the test parallel we should pip install pytest-xdist install this and we need to use pytest -n 2 #here if you give to 2 test will run parallel 3 means 3 test will run
-#@pytest.mark.xfail  here it will run but don't show in output pass or fail
+#@pytest.mark.xfail  here it will run but don't show in output pass or fail and it except fail
 
 #fixtures are used as setup and tear down methods. 
 ''' pytest are functions that setup test Environments before a test runs and clean up afterward. 
