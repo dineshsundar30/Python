@@ -1,5 +1,10 @@
 -----------string slicing---------------
 **
+#To find the second higest number in from the list
+lst=[9,3,4,5,6,2,8,9] 
+lst.sort()  
+print(lst[1])
+
 To reverse the list 
 
 mynum = [1,2,3,4,5,6,7]
