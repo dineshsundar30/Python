@@ -178,4 +178,11 @@ print(name_list)
 
 
 To remove duplicate from list you can use this 
-set(name_list)
+set(name_list)   
+
+
+| Type      | Mutable | Example Data Types    |
+| --------- | ------- | --------------------- |
+| Mutable   | Yes     | list, dict, set       |
+| Immutable | No      | int, str, tuple, bool |
+
