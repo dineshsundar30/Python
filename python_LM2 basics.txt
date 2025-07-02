@@ -186,3 +186,13 @@ set(name_list)
 | Mutable   | Yes     | list, dict, set       |
 | Immutable | No      | int, str, tuple, bool |
 
+a = [1, 2, 3]
+print(id(a))  # Original ID
+a.append(4)
+print(id(a))  # Same ID → Mutable
+
+b = "hello"
+print(id(b))  # Original ID
+b = b + " world"
+print(id(b))  # Different ID → Immutable
+
