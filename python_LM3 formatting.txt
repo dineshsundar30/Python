@@ -70,4 +70,76 @@ print("the num is{:,}".format(num))
 And B for binary, o for octal, x or X for hexa, E for scientific 
 
 num = 1000000000
-print("the num is{:b}".format(num))
+print("the num is{:b}".format(num)) 
+
+
+----------------------------------Patterns-----------------------------------------------
+n=5 
+for i in range(n):  
+    for j in range(i+1):
+        print('*',end='') 
+
+    print() 
+
+
+O/P:
+*
+**
+***
+****
+***** 
+----------------------------------
+
+n=5 
+for i in range(n):  
+    for j in range(n-i):
+        print('*',end='') 
+
+    print()
+    
+O/P
+*****
+****
+***
+**
+*
+----------------------------------
+
+
+n=5 
+for i in range(n):  
+    for j in range(n-i):
+        print(' ',end='') 
+    for j in range(i):
+        print('*',end='')
+    for j in range(i+1):
+        print('*',end='') 
+    
+    print() 
+
+O/p:
+     *
+    ***
+   *****
+  *******
+ *********
+----------------------------------
+
+n=5 
+for i in range(n):  
+    for j in range(i):
+        print(' ',end='') 
+    for j in range(n-i-1):
+        print('*',end='')
+    for j in range(n-i):
+        print('*',end='') 
+    
+    print()
+
+O/P
+*********
+ *******
+  *****
+   ***
+    *
+
