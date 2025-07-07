@@ -9,7 +9,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from pageObjects.login import LoginPage
 from pageObjects.shop import ShopPage
 
-def test_e2e (browser Instance): 
+def test_e2e (browserInstance): 
 	driver= browserInstance 
 	driver.get("https://rahulshettyacademy.com/loginpagePractise/") 
 	loginPage LoginPage(driver) 
