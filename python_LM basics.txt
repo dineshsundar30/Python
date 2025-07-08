@@ -70,7 +70,7 @@ print(math.factorial(12))
 a=3
 b=4
 print(max(a,b))
-print(minn(a,b))
+print(min(a,b))
 
 import math
 a=1
