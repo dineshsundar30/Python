@@ -185,6 +185,17 @@ print(name_list)
 To remove duplicate from list you can use this 
 set(name_list)   
 
+| Data Type | Ordered      | Mutable | Allows Duplicates | Description                      |
+| --------- | ------------ | ------- | ----------------- | -------------------------------- |
+| `int`     | ❌ No         | ❌ No    | ✅ Yes             | Integer number (single value)    |
+| `bool`    | ❌ No         | ❌ No    | ✅ Yes             | Boolean value: `True` or `False` |
+| `str`     | ✅ Yes        | ❌ No    | ✅ Yes             | Sequence of characters (text)    |
+| `tuple`   | ✅ Yes        | ❌ No    | ✅ Yes             | Immutable sequence               |
+| `list`    | ✅ Yes        | ✅ Yes   | ✅ Yes             | Mutable sequence                 |
+| `dict`    | ✅ Yes (3.7+) | ✅ Yes   | ❌ No (keys)       | Key-value pairs                  |
+| `set`     | ❌ No         | ✅ Yes   | ❌ No              | Unordered unique collection      |
+
+
 
 | Type      | Mutable | Example Data Types    |
 | --------- | ------- | --------------------- |
