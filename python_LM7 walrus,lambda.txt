@@ -101,4 +101,19 @@ print(sorted(items))
 
 print(sorted(items,key=lambda x:x[2]))
 
-print(sorted(items,key=lambda x:x[2],reverse=True))
+print(sorted(items,key=lambda x:x[2],reverse=True)) 
+
+--------------------------------------------------------------------------
+Dictionary shorting
+
+def print_min_age_person(people):
+    sorted_people = sorted(people.items(), key=lambda item: item[1])
+    print(type(sorted_people))                                        ---> <class 'list'>
+    print(sorted_people)                                              ---> [('Charlie', 22), ('Alice', 25), ('David', 28), ('Bob', 30)]
+    min_person = sorted_people[0]
+    print(f"{min_person[0]} has the minimum age: {min_person[1]}")    ---> Charlie has the minimum age: 22
+
+people = {"Alice": 25, "Bob": 30, "Charlie": 22, "David": 28}
+print_min_age_person(people)
+
+
