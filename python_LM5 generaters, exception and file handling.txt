@@ -63,6 +63,16 @@ finally:                            #it will run all time with or without error 
    print("this will always execute")
 
 
+-----------sample program ---------------
+if need to check if one vale key is there are not in dictinary else i need to print no or the exception error using try except 
+
+my_dict = {"name": "John", "age": 30}
+
+try:
+    value = my_dict["city"]  # Trying to access a non-existing key
+    print("Value:", value)
+except KeyError:
+    print("No such key found in the dictionary!")
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
