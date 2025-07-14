@@ -195,6 +195,8 @@ set(name_list)
 | `dict`    | ✅ Yes (3.7+) | ✅ Yes   | ❌ No (keys)       | Key-value pairs                  |
 | `set`     | ❌ No         | ✅ Yes   | ❌ No              | Unordered unique collection      |
 
+* int and bool not collections, so ordered/mutable doesn’t really apply
+* dict preserves insertion order from Python 3.7+.
 
 
 | Type      | Mutable | Example Data Types    |
