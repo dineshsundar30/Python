@@ -1,3 +1,8 @@
+#To count the last four 0's count
+num = 123406540000
+digit_list = [int(digit) for digit in str(num)] 
+print(len(digit_list[-1:-5:-1]))
+
 -----------string slicing---------------
 **
 #To find the second higest number in from the list
