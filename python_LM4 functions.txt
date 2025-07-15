@@ -85,10 +85,10 @@ greet(name=input("name: "),age=input("age: "),city=input("city: "),state=input("
 
 default arguments
 
-def greet(fname, lname="")   #   here ""  if you keet empty it's wont print anything and argument not required for this or you can name default values "noname"
+def greet(fname, lname=""):   #   here ""  if you keet empty it's wont print anything and argument not required for this or you can name default values "noname"
   print(fname+lname)
 
-greet(dk)
+greet('dk')
 
 -----------------------------------------------------------------------------------------------------
 
