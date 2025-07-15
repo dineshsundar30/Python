@@ -118,7 +118,7 @@ print_min_age_person(people)
 
 or
 
-To find the min value key
+To find the min value based on value key
 data = {
     'Alice': 25,
     'Bob': 19,
