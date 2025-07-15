@@ -104,7 +104,7 @@ print(sorted(items,key=lambda x:x[2]))
 print(sorted(items,key=lambda x:x[2],reverse=True)) 
 
 --------------------------------------------------------------------------
-Dictionary shorting
+Dictionary shorting     - To find the min value key
 
 def print_min_age_person(people):
     sorted_people = sorted(people.items(), key=lambda item: item[1])
@@ -114,6 +114,22 @@ def print_min_age_person(people):
     print(f"{min_person[0]} has the minimum age: {min_person[1]}")    ---> Charlie has the minimum age: 22
 
 people = {"Alice": 25, "Bob": 30, "Charlie": 22, "David": 28}
-print_min_age_person(people)
+print_min_age_person(people) 
+
+or
+
+To find the min value key
+data = {
+    'Alice': 25,
+    'Bob': 19,
+    'Charlie': 30
+}
+
+# Find key with minimum value
+min_key = min(data, key=data.get)
+
+print("Person with minimum age:", min_key)
+print("Minimum age:", data[min_key])
+
 
 
