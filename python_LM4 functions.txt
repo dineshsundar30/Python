@@ -42,6 +42,11 @@ def sum(num):
 finalresult = sum(2)
 print(finalresult) 
 
+| Operator | Name           | Result Type | Example  | Output |
+| -------- | -------------- | ----------- | -------- | ------ |
+| `/`      | Float Division | `float`     | `5 / 2`  | `2.5`  |
+| `//`     | Floor Division | `int`       | `5 // 2` | `2`    |
+
 
 -----------------------------------------
 args function 
