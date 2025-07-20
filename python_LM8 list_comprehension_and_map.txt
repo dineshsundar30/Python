@@ -140,7 +140,7 @@ ZPI     #it will zip two or more iterables as single iterable
 items= ['phone','lamp','table','pen']
 price = [10000,200,10000,20]
 
-zipped = list(zip(items,prices)]   #it will pack as a tuple object 
+zipped = list(zip(items,price))   #it will pack as a tuple object 
 
 print(zipped)
 
