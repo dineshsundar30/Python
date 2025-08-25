@@ -1,1 +1,11 @@
+--------------------------------Finding the sub string count ---------------------------
+s = "ABCDCDC"
+sub = "CDC"
+
+count = 0
+for i in range(len(s) - len(sub) + 1):  # we are using +1 because index will start from 0 loop until substring fits
+    if s[i:i+len(sub)] == sub:
+        count += 1
+
+print("Substring occurs:", count, "times")
 
