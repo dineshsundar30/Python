@@ -9,3 +9,22 @@ for i in range(len(s) - len(sub) + 1):  # we are using +1 because index will sta
 
 print("Substring occurs:", count, "times")
 
+---------------------------- open and write to file in python -------------------------------------------
+try:
+    file = open("sample.txt", "r")
+    content = file.read()
+    print(content)
+    file.close()
+
+    file = open("sample.txt", "a")
+    file.write("\n123")
+    file.close()
+
+except Exception:
+    print("file is not present")
+
+    with open('sample.txt','w') as file:
+        file.write('456')
+
+finally:
+    print('done')
