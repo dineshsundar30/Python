@@ -72,4 +72,15 @@ for i in mystr:
 
 for i in resultdist:
     if resultdist[i]==1:
+        print(i) 
+
+        #insted we can go with below
+#to get the count of char in given list
+
+name='dineshkumar'
+x={i:name.count(i) for i in set(name)}
+print(x)
+
+for i in x:
+    if x[i]==1:
         print(i)
