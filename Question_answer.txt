@@ -57,4 +57,19 @@ o/p
   *****
    ***
     *
-    
+
+
+-------------------------------------------------------------------
+mystr="aabbccddeffg"
+
+resultdist={}
+for i in mystr:
+    if i in resultdist:
+        resultdist[i]+=1
+    else:
+        resultdist[i]=1
+
+
+for i in resultdist:
+    if resultdist[i]==1:
+        print(i)
