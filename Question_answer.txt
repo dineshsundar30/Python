@@ -112,4 +112,24 @@ print(lst)
 
 --------------------------------------------------------------------------------------
 
+numbers = [1, 2, 3, 4, 5]
+target = 6
 
+for num in numbers:
+    if num == target:
+        print("Found it!")
+        break
+else:
+    print("Not found!")  # This will run because break is not triggered
+
+print('                  ------                        ')
+
+count = 0
+
+while count < 5:
+    print("Counting:", count)
+    if count == 3:
+        break
+    count += 1
+else:
+    print("Finished counting!")  # This will NOT run due to break
