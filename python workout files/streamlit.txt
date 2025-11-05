@@ -1,3 +1,6 @@
 pip install streamlit
-
+streamlit run main.py -- to run our app
 streamlit hello -- to check streamlit working correctly
+streamlit.write("hello")  -- here we can pass anyting to display in our app
+
+
