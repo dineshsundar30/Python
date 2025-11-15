@@ -121,8 +121,7 @@ for num in numbers:
         break
 else:
     print("Not found!")  # This will run because break is not triggered
-
-print('                  ------                        ')
+--------------------------------------------------------------------------------------
 
 count = 0
 
