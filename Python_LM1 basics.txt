@@ -26,8 +26,10 @@ temp=-17
 print(f"Today is {month} {day} and it's {temp} degrees outside")
 o/p today is 30 september and it's -17 degrees outside  ----> f is use to insert a variable in side the string 
 
+#F - string Debugging
 
-
+name='dinesh'
+print(f"{name=}")  #O/p -> name='dinesh'
 
 #-----------booleans-----------------------
 
