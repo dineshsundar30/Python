@@ -72,6 +72,12 @@ And B for binary, o for octal, x or X for hexa, E for scientific
 num = 1000000000
 print("the num is{:b}".format(num)) 
 
+-----------------------------------------------------
+#F - string Debugging
+
+name='dinesh'
+print(f"{name=}")  #O/p -> name='dinesh'
+
 
 ----------------------------------Patterns-----------------------------------------------
 n=5 
