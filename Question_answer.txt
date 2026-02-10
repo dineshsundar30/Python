@@ -132,3 +132,42 @@ while count < 5:
     count += 1
 else:
     print("Finished counting!")  # This will NOT run due to break
+
+---------------------------------------------------------------------------------------------------
+
+a = 'dskfdccd'
+b = 'cadcbsc'
+Write a Python program to find the characters that are present in one string but not in the other.
+
+basic
+a = 'dskfdccd'
+b = 'cadcbsc'
+
+w = []
+
+for i in a:
+    if i not in b:
+        w.append(i)
+
+for j in b:
+    if j not in a:
+        w.append(j)
+
+print(w)
+
+-----  or ----
+
+a = 'dskfdccd'
+b = 'cadcbsc'
+
+w = [c for c in a if c not in b] + [c for c in b if c not in a]
+print(w)
+
+-----  or ----
+
+a = 'dskfdccd'
+b = 'cadcbsc'
+
+w = list(set(a) ^ set(b))
+print(w)
+
