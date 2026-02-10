@@ -169,5 +169,9 @@ a = 'dskfdccd'
 b = 'cadcbsc'
 
 w = list(set(a) ^ set(b))
-print(w)
+print(w)                            
+
+^ (symmetric difference operator)
+This operator finds elements that are in either set, but NOT in both
+In simple words:        “Give me characters that appear in only one string.”
 
