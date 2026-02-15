@@ -1,8 +1,8 @@
 #-----strings-----------------------------
 
 store='nick\'s pizza, the "best" there is'  
-o/p  nick's pizza, the "best" there is     ------>  #\'is use to denoted that this not a end of the string
-\t- tabspace
+o/p  nick's pizza, the "best" there is     ------>  #\'is use to denoted that this not a end of the string 
+\t- tabspace                               ------> \ it's also called as escape sequence
 \n - nextline
 
 
