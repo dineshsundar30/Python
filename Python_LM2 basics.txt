@@ -64,6 +64,9 @@ cities[2]="salem"  --->its will change the value in the list
 appen
 cities.append("dharmapuri") -->it will add this in list in last 
 
+insert
+cities.insert(3,'chennai')   --> it will insert the value in that 3rd index
+
 remove using del
 del cities[3]
 
