@@ -2,7 +2,7 @@
 cd path/to/your/project
 
 # 2. Create a virtual environment named 'venv'
-python3 -m venv venv
+python3 -m venv venv (or) python venv venv  --> for window
 
 # 3. Activate the virtual environment (macOS/Linux)
 source venv/bin/activate
