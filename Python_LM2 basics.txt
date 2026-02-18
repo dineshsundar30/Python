@@ -182,6 +182,8 @@ unique , not ordered
 don not allow dupilicates
 we can not modify like a[2]=2 but we can add,update,remove,pop()
 
+and frozenset()    --> frozenset is an immutable version of a set
+ 
 ✅ When to use which?
 Use add() → when you want to insert a single element.
 Use update() → when you want to insert multiple elements at once (from list, tuple, set, etc.).
