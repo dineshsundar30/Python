@@ -175,3 +175,45 @@ print(w)
 This operator finds elements that are in either set, but NOT in both
 In simple words:        “Give me characters that appear in only one string.”
 
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+snack = input("Enter your preferred snack: ").lower()
+
+if snack == "cookies" or snack == "samosa":
+    print(f"Great Choice! We'll serve you {snack}")
+else:
+    print("Sorry, we only serve cookies or samosa with tea")
+	
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	
+# binarysearch
+
+mylist = [-1, 0, 3, 5, 9, 12]
+
+def binarysearch(mylist, target):
+    l = 0
+    r = len(mylist) - 1
+
+    while l <= r:
+        m = (l + r) // 2
+
+        if target == mylist[m]:
+            return m
+        elif target > mylist[m]:
+            l = m + 1
+        elif target < mylist[m]:
+            r = m - 1
+
+    return -1
+
+
+r = binarysearch(mylist, -1)
+print(r)
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# to remove duplicates
+
+mylist = [-1, 0, 3, 5, 9, 12, 3]
+
+print([j for i, j in enumerate(mylist) if j not in mylist[:i]])
