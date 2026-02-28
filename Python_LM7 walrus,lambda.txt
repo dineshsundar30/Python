@@ -23,6 +23,14 @@ while (inp :=input())!= 'z':
 
 print(mylist)
 
+------------------------------------
+
+flavors = ['ginger','lemon','black']
+
+while (user_choice := input("enter your flavor: ")) not in flavors:
+    user_choice = input("Oops that's not available, please select an available one: ")
+else:
+    print(f"Here is your {user_choice}")
 
 --------------------------
 
@@ -130,6 +138,7 @@ min_key = min(data, key=data.get)
 
 print("Person with minimum age:", min_key)
 print("Minimum age:", data[min_key])
+
 
 
 
