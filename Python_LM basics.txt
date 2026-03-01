@@ -127,3 +127,10 @@ print("name :"+name)
 print("email :"+email)
 print("phone numbe :"+num)
 print("*" * 50)
+
+
+-------------------membership testing---------------------
+
+masala_spices = ("cardamom", "cloves", "cinnamon")
+
+print(f"Is cinnamon in masala spices ? {'cinnamon' in masala_spices}")
