@@ -185,3 +185,19 @@ o/p:
 *****
 *******
 *********
+
+------------------encoding and decoding --------------------------
+
+
+label_text = "Chai Spécial"
+
+ecoded_label = label_text.encode("utf-8")
+
+print(f"Non Encoded label: {label_text}")
+
+print(f"Encoded label: {ecoded_label}")
+
+decoded_label = ecoded_label.decode("utf-8")
+
+print(f"Decoded label: {decoded_label}")
+
