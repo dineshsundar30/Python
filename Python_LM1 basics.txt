@@ -79,6 +79,14 @@ if num>=1 and num<=100:
 else:
   print("your number is not in range")
 
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+snack = input("Enter your preferred snack: ").lower()
+
+if snack == "cookies" or snack == "samosa":
+    print(f"Great Choice! We'll serve you {snack}")
+else:
+    print("Sorry, we only serve cookies or samosa with tea")
 
 
 #----------------picking random------------------------
