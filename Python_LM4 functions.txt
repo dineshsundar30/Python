@@ -50,6 +50,13 @@ print(finalresult)
 | `//`     | Floor Division | `int`       | `5 // 2` | `2`    |
 
 
+def chai_report():
+    return 100, 20, 10 # sold, remaining
+
+sold, remaining, not_paid = chai_report()
+print("Sold: ", sold)
+print("Remaining: ", remaining)
+
 -----------------------------------------
 args function 
 
@@ -248,6 +255,7 @@ chai_shop()
 
 print("4️⃣ Final Global chai_type:", chai_type)  
 # Global variable changed because of 'global'
+
 
 
 
