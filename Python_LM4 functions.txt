@@ -210,7 +210,39 @@ print(user1.username)  #you can call this variable with object
 if you want to access the class variable you can use like below class name + variable name
 print(User.users)
 
+---------------- variable scope --------
+# GLOBAL VARIABLE
+chai_type = "Plain"
 
+def chai_shop():
 
+    # ENCLOSING VARIABLE
+    order = "Lemon"
 
+    def counter():
+        # LOCAL VARIABLE
+        chai_type = "Masala"
+        print("1️⃣ Local chai_type variable:", chai_type)
+
+    def kitchen():
+        nonlocal order
+        order = "Ginger"
+        print("2️⃣ Modified Enclosing variable:", order)
+
+    def manager():
+        global chai_type
+        chai_type = "Kesar"
+        print("3️⃣ Modified Global chai_type variable:", chai_type)
+
+    counter()
+    print("After counter, Enclosing order:", order)
+
+    kitchen()
+    print("After kitchen, Enclosing order:", order)
+
+    manager()
+
+chai_shop()
+
+print("4️⃣ Final Global chai_type:", chai_type)
 
