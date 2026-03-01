@@ -209,3 +209,33 @@ print(r)
 mylist = [-1, 0, 3, 5, 9, 12, 3]
 
 print([j for i, j in enumerate(mylist) if j not in mylist[:i]])
+
+
+#---------------------------------------------------------------------------------------------------------------------
+
+name="d-i-n-e-s-h"
+
+print(''.join([i for i in name if i != '-']))
+
+#------OR---------
+
+name="d-i-n-e-s-h"
+
+r=[]
+for i in name:
+    if i != '-':
+        r.append(i)
+
+print(r)
+print(''.join(r))
+
+#------OR---------
+
+name="d-i-n-e-s-h"
+
+v=name.split('-')
+
+
+print(v)
+print(''.join(v))
+
