@@ -27,7 +27,20 @@ from email import otp,message       #here we can use directly that function name
  						it will create a conflicts issue if we have name function name in 2 file
 print(otp())
 
+
+Tea_bussiness\
+    recipes\
+        flavors.py
+	main.py
+
+import recipes.flavors
+print(recipes.flavors.ginger_chai())
+from recipes.flavors import elachai_chai, ginger_chai
+from recipes.flavors import *       # not recommended 
+print(ginger_chai())
+
 --------------------------------
+
 def greet(name,age):
   print(name+ "welcome"+" "+ age)
 
@@ -273,6 +286,7 @@ chai_shop()
 
 print("4️⃣ Final Global chai_type:", chai_type)  
 # Global variable changed because of 'global'
+
 
 
 
