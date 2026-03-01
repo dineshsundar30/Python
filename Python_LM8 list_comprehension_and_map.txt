@@ -119,6 +119,18 @@ using else and if
 
 #cart_rounded = {key:round(val)*.9 if val>500 else val for key,val in cart.items()}
 
+--------------------------------------------------------------
+
+recipes = {
+    "Masala Chai": ["ginger", "cardamom", "clove"],
+    "Elaichi Chai": ["cardamom", "milk"],
+    "Spicy Chai": ["ginger", "black pepper", "clove"],
+}
+
+unique_spices = {spice for ingredients in recipes.values() for spice in ingredients}
+
+print(unique_spices)
+
 --------------------------------------------------------------------------------------
 dictionary = {key: function for key,val itterable}
 
