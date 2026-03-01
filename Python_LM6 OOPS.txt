@@ -5,6 +5,17 @@ user name, pwd, email_id
 methods:
  register,login,changename
 
+
+Tea_bussiness\
+    recipes\
+        flavors.py
+	main.py
+
+import recipes.flavors
+print(recipes.flavors.ginger_chai())
+from recipes.flavors import elachai_chai, ginger_chai
+from recipes.flavors import *       # not recommended 
+print(ginger_chai())
 ------------------------------------------------------------------
 #Keep a class name's first letter as capital 
 
@@ -218,3 +229,4 @@ car1 = Car()
 # Pass objects
 set_color(bike1, 'blue')  # Output: Bike color set to: blue \n Bike is starting...   # we pass the object like a variable
 set_color(car1, 'red')    # Output: Car color set to: red \n Car is starting...
+
