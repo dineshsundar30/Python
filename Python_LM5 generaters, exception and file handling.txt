@@ -15,25 +15,6 @@ for i in myoutput:
     print(i)
 
 
-
----------------------------------------------------------------
- modules
-
-                                 #email.py
-
-import email as e
-                      #group of similler instruction we can write in one file and it's called one module
-print(e.otp())  # here we need to use that file name . to access the function
-
-or 
-
-to import particular function 
-
-from email import otp,message       #here we can use directly that function name but first import file_name is suggestable because
- 						it will create a conflicts issue if we have name function name in 2 file
-print(otp())
-
-
 -------------------------------------------------------------------------
 
 EXCEPTION HANDLING
@@ -115,4 +96,5 @@ lines.append("This is a new line\n")
 # Step 3: Write all lines back
 with open(filename, "w") as file:
     file.writelines(lines)
+
 
