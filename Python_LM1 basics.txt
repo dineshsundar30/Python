@@ -202,6 +202,23 @@ for i in range(1, 5):
                                       *****
 
 
+---------this will return the element with index-----------------
+
+menu = ["Green", "Lemon", "Spiced", "Mint"]
+
+for idx, item in enumerate(menu, start=1):            #also we can control the starting index with  start=1
+    print(f"{idx} : {item} chai")
+
+
+
+-------------------to remove duplicates ----------------
+
+mylist = [-1, 0, 3, 5, 9, 12, 3]
+
+print([j for i, j in enumerate(mylist) if j not in mylist[:i]])
+
+
+
 -------------dictionarios----------------
 
 cats={"jane":6, "tom":14, "sara":8}
