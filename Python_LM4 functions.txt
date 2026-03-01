@@ -22,15 +22,6 @@ def greet(name,age):
 greet(age=15, name="dk")  #here we can change the order and it's called as keyword arguments
 
 
----------------------------------------
-
-def printing_name_age(*names,**ages):
-    for name, age in zip(names, ages.values()):
-        print(f"the name is {name} and age is {age}")
-    
-    
-printing_name_age("dk","ak",'sk', age=20, age2=22,age3=24)
-
 ------------------------------------------------------------------
 
 return
@@ -93,7 +84,14 @@ def greet(**i):
 
 greet(name=input("name: "),age=input("age: "),city=input("city: "),state=input("State: "))
 
+---------------------------------------
 
+def printing_name_age(*names,**ages):
+    for name, age in zip(names, ages.values()):
+        print(f"the name is {name} and age is {age}")
+    
+    
+printing_name_age("dk","ak",'sk', age=20, age2=22,age3=24)
 
 ------------------------------------------------------------------------------------------
 
@@ -103,6 +101,21 @@ def greet(fname, lname=""):   #   here ""  if you keet empty it's wont print any
   print(fname+lname)
 
 greet('dk')
+
+
+
+
+def Tea_order(order=None):
+    orderl=[]
+    if order is None:
+        print(type(order))
+        orderl.append("order list is empty")
+    else:
+        orderl.append(order) 
+    
+    print(orderl) 
+        
+Tea_order()
 
 -----------------------------------------------------------------------------------------------------
 
@@ -194,6 +207,7 @@ print(user1.username)  #you can call this variable with object
 
 if you want to access the class variable you can use like below class name + variable name
 print(User.users)
+
 
 
 
