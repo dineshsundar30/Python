@@ -181,7 +181,7 @@ chai_order = {"type": "Ginger Chai", "size": "Medium", "sugar": 1}
 
 last_item = chai_order.popitem()
 
-customer_note = chai_order.get("size", "NO Note")          # we can sue .get() method to het the value if that value not present it's will not through error and we can set a default value
+customer_note = chai_order.get("size", "NO Note")          # we can sue .get() method to het the value if that value not present it's will not through error it's return None and we can set a default value
 
 print(f"customer_note is: {customer_note}")
 
