@@ -9,6 +9,24 @@ name="Ak"
 greet(name)
 print(greet.__doc__)   
 print(greet.__name__)   
+
+---------------------------------------------------------------
+ modules
+
+                                 #email.py
+
+import email as e
+                      #group of similler instruction we can write in one file and it's called one module
+print(e.otp())  # here we need to use that file name . to access the function
+
+or 
+
+to import particular function 
+
+from email import otp,message       #here we can use directly that function name but first import file_name is suggestable because
+ 						it will create a conflicts issue if we have name function name in 2 file
+print(otp())
+
 --------------------------------
 def greet(name,age):
   print(name+ "welcome"+" "+ age)
@@ -255,6 +273,7 @@ chai_shop()
 
 print("4️⃣ Final Global chai_type:", chai_type)  
 # Global variable changed because of 'global'
+
 
 
 
