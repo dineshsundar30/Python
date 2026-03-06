@@ -27,3 +27,49 @@ pip freeze > requirements.txt
 
 # 10. Deactivate the virtual environment when done
 deactivate
+
+================================================================================================================================================================
+
+pip install uv
+
+uv --> uv doc
+
+uv python list --> shwo the available pyhton versions works with python above 3.7
+
+uv python install 3.10 --> to install that particular version
+
+un python find 3.8
+
+un python uninstall 3.8
+
+
+
+uv run filename.py --> to run a file using uv
+
+uv run --python 3.9 filename.py --> to run a file using uv with specfic installed python version
+
+uv run --with request --python 3.9 main.py --> insted of installing the module we can use it like this while running ( request )
+
+uv init --script main.py --python 3.9
+  if we add this from next time we can use like ( uv run main.py ) this will run main.py in that python version
+
+uv add --script main.py "request"
+  this will install the request while runtime and we can use after adding that ( uv run main.py )
+
+
+
+to working with project
+
+uv init --> it will inishate a git repo and create .gitignore , .python-version, pyproject.toml, readme
+
+and we can use (uv init project_name) it wil create a new projetc directory
+
+uv add request --> this will create .venv add the package in projetc and add it in pyproject.toml file dependency
+
+uv add request==2.32 --> this will add a specfic version
+
+
+
+uv remove request
+
+uv sync --> will remove or add dependency based on toml file
