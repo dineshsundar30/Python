@@ -98,3 +98,107 @@ with open(filename, "w") as file:
     file.writelines(lines)
 
 
+
+# =================================================================
+                     # PYTHON GENERATORS
+# =================================================================
+
+# 1. THE BASIC GENERATOR (yield)
+# Found in: 01_basics.py
+# -----------------------------------------------------------------
+# A normal function returns everything at once, holding data in memory.
+def get_chai_list():
+    return ["Cup 1", "Cup 2", "Cup 3"]
+
+# A generator "yields" one by one, pausing execution and saving state.
+def get_chai_gen():
+    yield "Cup 1"
+    yield "Cup 2"
+    yield "Cup 3"
+
+chai = get_chai_gen()
+print(next(chai)) # Output: Cup 1
+print(next(chai)) # Output: Cup 2
+
+# KEY CONCEPTS:
+# - The 'yield' statement pauses the function and saves local state (variables, etc.).
+# - The 'next()' function "pokes" the generator to run until the next yield.
+
+
+# 2. INFINITE STREAMS (Memory Efficiency)
+# Found in: 02_infinite_generators.py
+# -----------------------------------------------------------------
+# Generators are powerful for data that never ends or is too large for RAM.
+def infinite_chai():
+    count = 1
+    while True:
+        yield f"Refill #{count}"
+        count += 1
+
+refill = infinite_chai()
+
+# We can ask for 5 refills or 5 million; it only calculates the next one on demand.
+for _ in range(5):
+    print(next(refill))
+
+# KEY CONCEPTS:
+# - Lazy Evaluation: Code inside the 'while' loop only runs when next() is called.
+# - State Retention: Each instance (like 'refill' and 'user2') maintains its own count.
+
+
+# 3. TWO-WAY COMMUNICATION (.send())
+# Found in: 03_send_generators.py
+# -----------------------------------------------------------------
+# Generators can be interactive; you can pass data INTO them while they run.
+
+
+
+def chai_customer():
+    print("Welcome ! What chai would you like ?")
+    order = yield  # Execution pauses here and waits for input
+    while True:
+        print(f"Preparing: {order}")
+        order = yield
+
+stall = chai_customer()
+next(stall) # Priming: This runs the code until the very first 'yield'
+
+stall.send("Masala Chai") # Sends "Masala Chai" into the 'order' variable
+stall.send("Lemon Chai")  # Sends "Lemon Chai" into the 'order' variable
+
+# KEY CONCEPT:
+# - Handshake: The .send() method provides the value that the yield expression evaluates to.
+
+
+# 4. DELEGATION AND CLEANUP
+# Found in: 04_close_generator.py
+# -----------------------------------------------------------------
+
+# DELEGATION WITH 'yield from':
+# Instead of looping through another generator, use 'yield from' to link them.
+def local_chai():
+    yield "Masala Chai"
+    yield "Ginger Chai"
+
+def imported_chai():
+    yield "Matcha"
+    yield "Oolong"
+
+def full_menu():
+    yield from local_chai()    # Automatically yields everything from local_chai
+    yield from imported_chai() # Then yields everything from imported_chai
+
+# MANUAL TERMINATION WITH '.close()':
+# Use .close() to stop a generator and trigger cleanup.
+def chai_stall():
+    try:
+        while True:
+            order = yield "Waiting for chai order"
+    except: # Triggered by .close()
+        print("Stall closed, No more chai")
+
+stall_instance = chai_stall()
+print(next(stall_instance))
+stall_instance.close() # Forces the generator to exit and run the 'except' block
+
+
