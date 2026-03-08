@@ -125,9 +125,10 @@ print(next(chai)) # Output: Cup 2
 # - The 'next()' function "pokes" the generator to run until the next yield.
 
 
+# -----------------------------------------------------------------
 # 2. INFINITE STREAMS (Memory Efficiency)
 # Found in: 02_infinite_generators.py
-# -----------------------------------------------------------------
+
 # Generators are powerful for data that never ends or is too large for RAM.
 def infinite_chai():
     count = 1
@@ -145,13 +146,12 @@ for _ in range(5):
 # - Lazy Evaluation: Code inside the 'while' loop only runs when next() is called.
 # - State Retention: Each instance (like 'refill' and 'user2') maintains its own count.
 
+# -----------------------------------------------------------------
 
 # 3. TWO-WAY COMMUNICATION (.send())
 # Found in: 03_send_generators.py
-# -----------------------------------------------------------------
+
 # Generators can be interactive; you can pass data INTO them while they run.
-
-
 
 def chai_customer():
     print("Welcome ! What chai would you like ?")
@@ -169,10 +169,9 @@ stall.send("Lemon Chai")  # Sends "Lemon Chai" into the 'order' variable
 # KEY CONCEPT:
 # - Handshake: The .send() method provides the value that the yield expression evaluates to.
 
-
+# -----------------------------------------------------------------
 # 4. DELEGATION AND CLEANUP
 # Found in: 04_close_generator.py
-# -----------------------------------------------------------------
 
 # DELEGATION WITH 'yield from':
 # Instead of looping through another generator, use 'yield from' to link them.
@@ -200,5 +199,6 @@ def chai_stall():
 stall_instance = chai_stall()
 print(next(stall_instance))
 stall_instance.close() # Forces the generator to exit and run the 'except' block
+
 
 
