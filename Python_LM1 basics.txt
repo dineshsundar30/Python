@@ -31,6 +31,9 @@ o/p today is 30 september and it's -17 degrees outside  ----> f is use to insert
 name='dinesh'
 print(f"{name=}")  #O/p -> name='dinesh'
 
+also using f string we can formte like below also
+print(f"Half of total time is {10/3:.2f} seconds")
+
 #-----------booleans-----------------------
 
 light_is_on=True
