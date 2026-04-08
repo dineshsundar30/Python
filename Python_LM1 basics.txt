@@ -37,8 +37,8 @@ print(f"Half of total time is {10/3:.2f} seconds")
 old method
 
 age = 27.00011
-formatted_age = f"{age:.2f}"
-print(formatted_age)  # Output: 27.00
+formatted_age = "%.2f" % age
+print(type(formatted_age))  # Output: 27.00
 
 #-----------booleans-----------------------
 
