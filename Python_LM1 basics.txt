@@ -212,12 +212,16 @@ for i in range(1, 5):
 
 
 ---------this will return the element with index-----------------
+enumerate will give iterator object that yields pairs of (index, value)
 
 menu = ["Green", "Lemon", "Spiced", "Mint"]
 
 for idx, item in enumerate(menu, start=1):            #also we can control the starting index with  start=1
     print(f"{idx} : {item} chai")
 
+or 
+print(list(enumerate(menu)))
+# Output: [(0, 'Green'), (1, 'Lemon'), (2, 'Spiced'), (3, 'Mint')]
 
 
 -------------------to remove duplicates ----------------
