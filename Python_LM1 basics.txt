@@ -34,6 +34,12 @@ print(f"{name=}")  #O/p -> name='dinesh'
 also using f string we can formte like below also
 print(f"Half of total time is {10/3:.2f} seconds")
 
+old method
+
+age = 27.00011
+formatted_age = f"{age:.2f}"
+print(formatted_age)  # Output: 27.00
+
 #-----------booleans-----------------------
 
 light_is_on=True
