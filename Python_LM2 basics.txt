@@ -93,7 +93,7 @@ print(len(cities))
 #---------------2D list--------------------
 
 cities = ["chennai","salem","dharmapuri","namakal"]
-TN = cities           # ------------------------------------> this copy will not work 
+TN = cities          
 ap = ['tirupathi','nellore','guntur']
 karnataka = ['bangalore','mysore','udupi']
 
