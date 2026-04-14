@@ -232,6 +232,25 @@ def greet():
 greet()
 print(greet.__name__)  # "greet" → preserved because of @wraps
 
+-----------------------------------
+
+Sample usege:
+
+def my_decorator(func):
+    def wapper(name):
+        name = name.title()   # FIX: assign back
+        return func(name)
+    return wapper
+    
+    
+@my_decorator
+def Decocheck(name):
+    print(name)
+    
+    
+Decocheck('dinesh')
+
+
 # -------
 
 # 02_logging_decorator.py
