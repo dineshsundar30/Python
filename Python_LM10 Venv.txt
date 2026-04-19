@@ -38,6 +38,8 @@ uv python list --> shwo the available pyhton versions works with python above 3.
 
 uv python install 3.10 --> to install that particular version
 
+uv python pin 3.14.1  --> this will pin particular python version on our project
+
 un python find 3.8
 
 un python uninstall 3.8
