@@ -193,6 +193,10 @@ don not allow dupilicates
 we can not modify like a[2]=2 but we can add,update,remove,pop()
 
 and frozenset()    --> frozenset is an immutable version of a set
+
+f = frozenset(["apple", "banana", "orange"])
+print(f)
+f.add("grape")                      O/P --> AttributeError: 'frozenset' object has no attribute 'add'
  
 ✅ When to use which?
 Use add() → when you want to insert a single element.
