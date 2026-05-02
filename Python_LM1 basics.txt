@@ -228,7 +228,7 @@ print(list(enumerate(menu)))
 
 mylist = [-1, 0, 3, 5, 9, 12, 3]
 
-print([j for i, j in enumerate(mylist) if j not in mylist[:i]])
+print([v for i,v in enumerate(my_list) if v not in my_list[:i]])
 
 
 
