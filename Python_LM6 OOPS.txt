@@ -90,10 +90,10 @@ use.temp()
 
 Method Overloading 
 
-Defining multiple methods with the same name but different 
-parameters. 
+Method overloading means defining multiple methods with the same name but different parameters 
 
 or multiple methods with the same name but different arguments exist.
+
 sample prg:
 
 class MathOperations: 
