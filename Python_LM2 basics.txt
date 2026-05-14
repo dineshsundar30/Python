@@ -211,6 +211,10 @@ Use add() → when you want to insert a single element.
 Use update() → when you want to insert multiple elements at once (from list, tuple, set, etc.).
 user.update(['agp', 'dk', 'zz']) so it will add all these value at one in that set
 
+Quick memory note:
+List → append() → add one item
+Set → add() → add one item
+Set/Dictionary → update() → add many items or merge
 
 names = {"dk","ak","sk","pk"}
 print(names)
