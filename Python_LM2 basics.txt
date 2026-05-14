@@ -212,7 +212,7 @@ Use update() → when you want to insert multiple elements at once (from list, t
 user.update(['agp', 'dk', 'zz']) so it will add all these value at one in that set
 
 Quick memory note:
-List → append() → add one item
+List → append() → Add one item at the end
 Set → add() → add one item
 Set/Dictionary → update() → add many items or merge
 
