@@ -75,3 +75,22 @@ uv add request==2.32 --> this will add a specfic version
 uv remove request
 
 uv sync --> will remove or add dependency based on toml file
+
+
+
+
+| Step | Command                              | Purpose                                              |
+| ---- | ------------------------------------ | ---------------------------------------------------- |
+| 1    | `cd my_project`                      | Go to project folder                                 |
+| 2    | `uv venv`                            | Create virtual environment with default name `.venv` |
+| 3    | `uv venv myenv`                      | Create virtual environment with custom name          |
+| 4    | `source .venv/bin/activate`          | Activate venv in Linux/macOS                         |
+| 5    | `.venv\Scripts\activate.bat`         | Activate venv in Windows CMD                         |
+| 6    | `.venv\Scripts\Activate.ps1`         | Activate venv in Windows PowerShell                  |
+| 7    | `uv pip install selenium`            | Install package using UV                             |
+| 8    | `uv add selenium`                    | Add dependency to project                            |
+| 9    | `uv pip freeze > requirements.txt`   | Create `requirements.txt` file                       |
+| 10   | `uv pip install -r requirements.txt` | Install packages from requirements file              |
+| 11   | `rm -rf .venv`                       | Remove virtual environment in Linux/macOS            |
+| 12   | `rmdir /s .venv`                     | Remove virtual environment in Windows                |
+
