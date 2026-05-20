@@ -62,7 +62,36 @@ custom_exceptions
 if flavor not in ["masala", "ginger", "elaichai"]:
     raise ValueError("Unsupported chai flavor...")
 
+optional custom_exceptions
 
+# 1. Define your custom exception by inheriting from Exception
+class OnlyCoffeeServedError(Exception):
+    pass
+
+
+# 2. Use it in a function
+def order_drink(drink_name):
+    try:
+        if drink_name.lower() == "tea":
+            # 3. Raise your custom error if the condition is met
+            raise OnlyCoffeeServedError("Sorry, this is a coffee shop!")
+        
+        print(f"Here is your delicious {drink_name}!")
+        
+    except OnlyCoffeeServedError as e:
+        # 4. Catch your specific custom error here
+        print(f"Shop Notice: {e}")
+
+
+# --- Test the Code ---
+
+# Test 1: Ordering coffee (This will succeed)
+order_drink("Latte")
+
+print("-" * 20)
+
+# Test 2: Ordering tea (This will trigger and catch our custom error)
+order_drink("Tea")
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
