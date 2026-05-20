@@ -55,6 +55,15 @@ try:
 except KeyError:
     print("No such key found in the dictionary!")
 
+------------------------------------------
+
+custom_exceptions
+
+if flavor not in ["masala", "ginger", "elaichai"]:
+    raise ValueError("Unsupported chai flavor...")
+
+
+
 ------------------------------------------------------------------------------------------------------------------------------------
 
 file handling
