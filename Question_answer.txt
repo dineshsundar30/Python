@@ -230,3 +230,12 @@ v=name.split('-')
 print(v)
 print(''.join(v))
 
+
+----------------------------------------------------------------------------------------------
+
+from collections import Counter
+
+num1 = 'rrsxaw'
+num2 = 'rsrwax'
+
+print(Counter(num1) == Counter(num2))
