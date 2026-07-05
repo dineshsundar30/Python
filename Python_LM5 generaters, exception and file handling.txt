@@ -136,6 +136,20 @@ with open(filename, "w") as file:
     file.writelines(lines)
 
 
+----
+
+file =open("test.txt")
+
+print(file.read(5))  #reads exactly 5 characters from the current position
+print(file.readline())  #reads from the current position until the end of the current line,
+
+
+# to print all the lines in files
+line = file.readline()
+while line!="":
+    print(line)
+    line=file.readline()
+
 
 # =================================================================
                      # PYTHON GENERATORS
