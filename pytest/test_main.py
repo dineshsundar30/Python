@@ -7,6 +7,7 @@
 #you can run specific file with py.test <filename>   like py.test <filename> -v -s
 # -k stands for method names execution like py.test -k <functionname> -v -s    #--->s to print all counsol logs in out put,  -v stands for verbose to provide more info metadata and here you can pass the partial name for your function name will run all the method which is having  the key word
 here using this -k we can run methods from different files where that particular menthod have that keyword
+# also we can use pytest finename.py::functionname --> to run specfic test
 # you can mark (tag) tests @pytest.mark.smoke and then run with -m which is stands for mark like py.test -m somke -v -s
 #you can skip tests with @pytest.mark.skip  then run the all the test cases with <py.test -v -s> all will run except this function
 #to run the test parallel we should pip install pytest-xdist install this and we need to use pytest -n 2 #here if you give to 2 test will run parallel 3 means 3 test will run
