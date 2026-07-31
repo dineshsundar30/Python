@@ -260,6 +260,9 @@ print(len(text.split()))  #its prints the size of string
 
 
 ############### word counting projrct########
+# -----------------------------------
+# Find Duplicate Elements
+# -----------------------------------
 
 text="a b c a a b"
 print(text.split())
@@ -297,12 +300,20 @@ for i in my_list:
         
 print([key for key in results if results[key] > 1])
 
-or 
-from collections import Counter
+or
 
-results = Counter(my_list)
+my_nums = [9, 4, 5, 3, 2, 1, 5, 2, 1, 5, 1, 4]
 
-print([key for key in results if results[key] > 1])
+# First Method
+counts = {i: my_nums.count(i) for i in set(my_nums)}
+print([num for num in counts if counts[num] > 1])
+
+# Second Method
+print([num for num in set(my_nums) if my_nums.count(num) > 1])
+
+# Third Method (Using Counter)
+counts = Counter(my_nums)
+print([num for num, c in counts.items() if c > 1])
 --------------------------------------------------------------------------------
 
 ###functions ############################
