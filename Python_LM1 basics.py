@@ -312,6 +312,8 @@ print([num for num in counts if counts[num] > 1])
 print([num for num in set(my_nums) if my_nums.count(num) > 1])
 
 # Third Method (Using Counter)
+
+from collections import Counter
 counts = Counter(my_nums)
 print([num for num, c in counts.items() if c > 1])
 --------------------------------------------------------------------------------
