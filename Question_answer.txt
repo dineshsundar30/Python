@@ -86,23 +86,6 @@ for i in x:
     if x[i]==1:
         print(i) 
 
-# -----------------------------------
-# Find Duplicate Elements
-# -----------------------------------
-
-my_nums = [9, 4, 5, 3, 2, 1, 5, 2, 1, 5, 1, 4]
-
-# First Method
-counts = {i: my_nums.count(i) for i in set(my_nums)}
-print([num for num in counts if counts[num] > 1])
-
-# Second Method
-print([num for num in set(my_nums) if my_nums.count(num) > 1])
-
-# Third Method (Using Counter)
-counts = Counter(my_nums)
-print([num for num, c in counts.items() if c > 1])
-
 
 --------------------------------------------------------------------------------------
 
