@@ -30,7 +30,6 @@ finally:
     print('done')
 
 
-
 --------------------------------------------------------------------------------------
 
 #Inline/Ternary Condition
@@ -184,9 +183,6 @@ num1 = 'rrsxaw'
 num2 = 'rsrwax'
 
 print(Counter(num1) == Counter(num2))
-
-
-from collections import Counter
 
 
 
