@@ -86,6 +86,24 @@ for i in x:
     if x[i]==1:
         print(i) 
 
+# -----------------------------------
+# Find Duplicate Elements
+# -----------------------------------
+
+my_nums = [9, 4, 5, 3, 2, 1, 5, 2, 1, 5, 1, 4]
+
+# First Method
+counts = {i: my_nums.count(i) for i in set(my_nums)}
+print([num for num in counts if counts[num] > 1])
+
+# Second Method
+print([num for num in set(my_nums) if my_nums.count(num) > 1])
+
+# Third Method (Using Counter)
+counts = Counter(my_nums)
+print([num for num, c in counts.items() if c > 1])
+
+
 --------------------------------------------------------------------------------------
 
 #Inline/Ternary Condition
@@ -239,3 +257,99 @@ num1 = 'rrsxaw'
 num2 = 'rsrwax'
 
 print(Counter(num1) == Counter(num2))
+
+
+from collections import Counter
+
+
+
+# -----------------------------------
+# Sum of Digits Until Single Digit
+# -----------------------------------
+
+user_inp = 9875
+
+result = sum(int(num) for num in str(user_inp))
+
+while result >= 10:
+    result = sum(int(num) for num in str(result))
+
+print(result)
+
+
+
+# -----------------------------------
+# Input = "xyz123"
+# Output = [1, 2, 3], ['x', 'y', 'z']
+# -----------------------------------
+
+user_input = "xyz123"
+
+print([
+    [int(num) for num in user_input if num.isdigit()],
+    [char for char in user_input if char.isalpha()]
+])
+
+
+
+
+# -----------------------------------
+# Convert Second Letter of Every Word to Uppercase
+# Input: "my name is dinesh"
+# Output: "mY nAme iS dInesh"
+# -----------------------------------
+
+u_inp = "my name is dinesh"
+
+words = u_inp.split()
+
+result = []
+
+for word in words:
+    if len(word) > 1:
+        result.append(word[0] + word[1].upper() + word[2:])
+    else:
+        result.append(word)
+
+print(" ".join(result))
+
+
+# Using List Comprehension
+
+u_inp = "my name is dinesh im from dharmapuri"
+
+result = [
+    word[0] + word[1].upper() + word[2:] if len(word) > 1 else word
+    for word in u_inp.split()
+]
+
+print(" ".join(result))
+
+
+
+# -----------------------------------
+# Separate Odd and Even Digits
+# -----------------------------------
+
+userinp = 132456789
+
+even = [i for i in str(userinp) if int(i) % 2 == 0]
+odd = [i for i in str(userinp) if int(i) % 2 != 0]
+
+print("Even Digits:", even)
+print("Odd Digits:", odd)
+
+
+# -----------------------------------
+# Output:
+# 100, 10, 90, 20, 80, 30, 70, 40, 60, 50
+# -----------------------------------
+
+inp1 = 100
+inp2 = 10
+
+while inp1 >= inp2:
+    print(inp1, inp2, end=", ")
+
+    inp1 -= 10
+    inp2 += 10
