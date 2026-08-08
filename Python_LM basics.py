@@ -133,4 +133,4 @@ print("*" * 50)
 
 masala_spices = ("cardamom", "cloves", "cinnamon")
 
-print(f"Is cinnamon in masala spices ? {'cinnamon' in masala_spices}")
+print(f"Is cinnamon in masala spices ? : {'cinnamon' in masala_spices}")
