@@ -6,17 +6,6 @@ o/p  nick's pizza, the "best" there is     ------>  #\'is use to denoted that th
 \n - nextline
 
 
-#for printing we can use below method without cast and concertinaing 
-
-name=input()
-score=int(input())
-department=input()
-
-print("my name is",name)
-print("my score is",score/10,"/10")
-print("my department is",": ",department)
-
-
 #--------using variables in strings-------
 
 example prg;
