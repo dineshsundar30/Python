@@ -242,8 +242,8 @@ set(name_list)
 
 | Data Type | Ordered      | Mutable | Allows Duplicates | Description                      |
 | --------- | ------------ | ------- | ----------------- | -------------------------------- |
-| `int`     | ❌ No         | ❌ No    | ✅ Yes             | Integer number (single value)    |
-| `bool`    | ❌ No         | ❌ No    | ✅ Yes             | Boolean value: `True` or `False` |
+| `int`     | ❌ NA         | ❌ No    | ✅ Yes             | Integer number (single value)    |
+| `bool`    | ❌ NA         | ❌ No    | ✅ Yes             | Boolean value: `True` or `False` |
 | `str`     | ✅ Yes        | ❌ No    | ✅ Yes             | Sequence of characters (text)    |
 | `tuple`   | ✅ Yes        | ❌ No    | ✅ Yes             | Immutable sequence               |
 | `list`    | ✅ Yes        | ✅ Yes   | ✅ Yes             | Mutable sequence                 |
@@ -252,7 +252,7 @@ set(name_list)
 
 * int and bool not collections, so ordered/mutable doesn’t really apply
 * dict preserves insertion order from Python 3.7+.
-
+* NA not applicable 
 
 | Type      | Mutable | Example Data Types    |
 | --------- | ------- | --------------------- |
