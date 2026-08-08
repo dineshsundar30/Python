@@ -219,7 +219,10 @@ f.add("grape")                      O/P --> AttributeError: 'frozenset' object h
  
 ✅ When to use which?
 Use add() → when you want to insert a single element.
-Use update() → when you want to insert multiple elements at once (from list, tuple, set, etc.).
+
+Use update() → when you want to insert multiple elements at once (from list, tuple, set, etc.).   Also, update() modifies the original dictionary; it doesn't create a new dictionary. in set
+Add multiple elements, dict in Add/update key-value pairs apart from this data type primarily we are not using 
+
 user.update(['agp', 'dk', 'zz']) so it will add all these value at one in that set
 
 Quick memory note:
