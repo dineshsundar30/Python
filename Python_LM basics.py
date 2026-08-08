@@ -74,8 +74,8 @@ print(min(a,b))
 
 import math
 a=1
-print(math.ceil(a)) --it's round the a with the next num
-print(math.floor(a))  -- it's round thr a with the previous number
+print(math.ceil(a)) --it's round with the next num
+print(math.floor(a))  -- it's round with the previous number
 
 a=4.4
 print(math.factorial(7))
