@@ -245,11 +245,15 @@ def chai_stall():
     try:
         while True:
             order = yield "Waiting for chai order"
+            print("Order received:", order)
     except: # Triggered by .close()
         print("Stall closed, No more chai")
 
 stall_instance = chai_stall()
 print(next(stall_instance))
+stall_instance.send("Masala Chai")
+stall_instance.send("Ginger Chai")
+
 stall_instance.close() # Forces the generator to exit and run the 'except' block
 
 
