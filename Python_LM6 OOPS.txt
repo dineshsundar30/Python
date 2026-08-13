@@ -46,8 +46,8 @@ Can keep the common variables as a class variable
 
 class User:
 
-     users = 0
-def __init__(self,user_name,pwd):
+    users = 0
+	def __init__(self,user_name,pwd):
        self. user_name = user_name      #instance variable
        self.pwd = pwd
        User.users += 1                  
