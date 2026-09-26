@@ -187,6 +187,8 @@ o/p:
 *******
 *********
 
+
+# simple and best way for pattern 
     
 n=5
 
