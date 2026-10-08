@@ -276,3 +276,28 @@ while inp1 >= inp2:
 
     inp1 -= 10
     inp2 += 10
+
+#----------------------------------------------
+urls = [
+ "https://www.google.com",
+ "https://www.microsoft.com",
+ "https://www.github.com",
+ "https://www.stackoverflow.com",
+ "https://www.python.org",
+ "https://www.wikipedia.org",
+ "https://www.reddit.com",
+ "https://www.youtubeshumma.com",
+ "https://www.linkedin.com",
+ "https://www.amazon.com",
+ "https://www.youtube.com"
+ ]
+
+for i in urls:
+ try:
+ r = requests.get(i,timeout=5)
+ if r.status_code == 200:
+ print(f"{i} is valid url")
+ except Exception as e:
+ # print(e)
+
+ print(f"{i}oops it's not a corrct one")
