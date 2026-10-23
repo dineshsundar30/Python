@@ -294,11 +294,11 @@ urls = [
 
 for i in urls:
  try:
- r = requests.get(i,timeout=5)
- if r.status_code == 200:
- print(f"{i} is valid url")
+	 r = requests.get(i,timeout=5)
+	 if r.status_code == 200:
+	 print(f"{i} is valid url")
  except Exception as e:
- # print(e)
+ print(e)
 
  print(f"{i}oops it's not a corrct one")
 
