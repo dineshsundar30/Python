@@ -301,3 +301,20 @@ for i in urls:
  # print(e)
 
  print(f"{i}oops it's not a corrct one")
+
+#---------------------------------------------------------------------------------
+
+In Python, == checks if two objects have the same value, while is checks if they are the exact same object in memory location.
+
+#---------------------------------------------------------------------------------
+
+a='a1b2c3d4'
+
+for i in a:
+ if i.isalpha():
+ print(i * int(a[a.find(i)+1]))
+ # or 
+
+ for i in range(len(a)):
+ if a[i].isalpha():
+ print(a[i]*int(a[i+1]))
