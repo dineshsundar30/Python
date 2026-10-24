@@ -110,6 +110,11 @@ if sqrt * sqrt == number:
 else:
     print(f"{number} is NOT a perfect square")
 
+---------------------------
+
+# The square numbers for the integers from 1 to 20 are
+print([i**2 for i in range(1,21)])
+
 -------------------------------------------------------
 
 height = float(input("What's your heigt : "))   # in python all input consider as a string so we need to type cast
