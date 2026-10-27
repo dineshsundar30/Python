@@ -3,6 +3,9 @@ num = 123406540000
 digit_list = [int(digit) for digit in str(num)] 
 print(len(digit_list[-1:-5:-1]))
 
+or
+u_imp="123406540000"
+print(len([i for i in u_imp[-1:-5:-1] if i=="0"]))
 -----------string slicing---------------
 **
 #To find the second higest number in from the list
