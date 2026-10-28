@@ -245,7 +245,7 @@ user2.register()
 if we need to print the instance variable
 print(user1.username)  #you can call this variable with object
 
-if you want to access the class variable you can use like below class name + variable name
+if you want to access the class variable you can use like below class name + variable name. if you call with object name also like user1.users() but this is not recomended 
 print(User.users)
 
 ------------------------------ variable scope -----------------------------------------------
