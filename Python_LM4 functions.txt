@@ -111,12 +111,12 @@ Kwargs
 and this we are using for variable_name and value  
 
 def print_drr(**kwargs):
-          for key,val in kwargs.items():
+    for key,val in kwargs.items():
           print(val)
 
 
 
-print_print_drr("doorno"="6/90","city"="dpi",name="dk")
+print_drr(doorno="6/90",city="dpi",name="dk")
 
 def greet(**i):
     for key,val in i.items():
