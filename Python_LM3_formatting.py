@@ -256,7 +256,7 @@ def my_decorator(func):
         name = name.title()   # FIX: assign back
         return func(name)
     return wapper
-    
+
     
 @my_decorator
 def Decocheck(name):
