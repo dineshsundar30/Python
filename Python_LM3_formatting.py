@@ -222,8 +222,8 @@ print(f"Decoded label: {decoded_label}")
 
 from functools import wraps
 
+# decorator is a function that modifies the behavior of another function without changing its original code.
 # A decorator is a function that takes another function as input,
-# wraps it with extra behavior, and returns the new wrapped function
 
 def my_decorator(func):
     # func is the original function being decorated (greet in this case)
