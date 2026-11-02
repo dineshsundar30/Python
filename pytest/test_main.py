@@ -27,6 +27,11 @@ for common setup and teardown create conftest file to generalize fixtures  '''
 We can run like this also using all the things like --> pytest -n 2 -m smoke --browser_name firefox --html=reports/report.html
 # To tun failed test cases in pytest use -->  pytest --last-failed
 
+# Pytest naming conventions can be customized using `pytest.ini` by configuring `python_functions`, `python_files`, and `python_classes` to support custom test names and discovery patterns.
+
+# example : 
+# [pytest]
+# python_functions = test_* *_test        # his allows Pytest to discover both test_* and *_test function naming patterns.
 '''
 
 import pytest
