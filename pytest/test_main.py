@@ -4,7 +4,7 @@
 #Any code should be wrapped in method only
 #Method name should have sense
 #to run all the function file in a directory -->pytest
-#you can run specific file with pytest <filename>   like py.test <filename> -v -s
+#you can run specific file with pytest <filename>   like pytest <filename> -v -s
 # -k stands for method names execution like pytest -k <functionname> -v -s    #--->s to print all counsol logs in out put,  -v stands for verbose to provide more info metadata and here you can pass the partial name for your function name will run all the method which is having  the key word
 here using this -k we can run methods from different files where that particular menthod have that keyword
 # also we can use pytest finename.py::functionname --> to run specfic test
