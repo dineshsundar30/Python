@@ -31,7 +31,7 @@ We can run like this also using all the things like --> pytest -n 2 -m smoke --b
 
 # example : 
 # [pytest]
-# python_functions = test_* *_test        # his allows Pytest to discover both test_* and *_test function naming patterns.
+# python_functions = test_* *_test        # this allows Pytest to discover both test_* and *_test function naming patterns.
 '''
 
 import pytest
